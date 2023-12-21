@@ -1,0 +1,553 @@
+/* Global CSS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/*  Global Variables */
+:root {
+  --border-color: radial-gradient(
+    13932987.76% 52.13% at 50% 2900%,
+    #fff 0%,
+    #020617 100%
+  );
+  --border-right-gradient: radial-gradient(
+    66.2% 24750% at 50% 50%,
+    #909090 1.56%,
+    #020617 100%
+  );
+  --color-button: #ea580c;
+  --paragraph-color: #cbd5e1;
+  --heading-color: #fff;
+  --backgroun-color: #1e293b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020617;
+  font-family: "Inter", sans-serif !important;
+}
+
+.sideNav {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+.nav-list {
+  background-color: #1e293b;
+}
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-icon p {
+  color: var(--heading-color);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  max-width: 6rem;
+  transition: 0.3s ease;
+}
+svg path {
+  transition: 0.3s ease;
+}
+.nav-icon:hover svg path {
+  /* stroke: #fff; */
+  opacity: 0.5;
+}
+.nav-icon:hover p {
+  opacity: 0.5;
+}
+
+.listButton p {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--heading-color);
+}
+
+.url-text p {
+  color: var(--paragraph-color);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+.form-div {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(2, 6, 23, 1) 100%
+  );
+  border-radius: 1.25rem;
+}
+.inputGroup {
+  background: #020617;
+  border-radius: 1.25rem;
+}
+.inputGroup h4 {
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.lableText {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+.loginBtn p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--heading-color);
+}
+
+.lable-div label input::placeholder {
+  color: var(--paragraph-color);
+}
+
+.linkGroup a span {
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112%;
+  color: var(--heading-color);
+  text-decoration-line: underline;
+}
+.linkGroup a p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: center;
+}
+.animate {
+  display: inline-block;
+  position: relative;
+}
+.animate::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.animate:hover::after,
+.animate:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.card-background h3 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  color: var(--heading-color);
+}
+.baner-box .banner p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  color: var(--paragraph-color);
+}
+
+.btn-task p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #fff;
+}
+.card-background{
+  background: url('/Assets/Images/bg-img-custom.png') no-repeat top -56px right -180px;
+  object-fit: contain;
+  background-size: 890px;
+  
+}
+
+
+@media only screen and (max-width:1600px){
+  .card-background{
+    background-size: 760px;
+    
+  }
+  
+}
+
+@media only screen and (min-width:1440px) and (max-width:1536px) {
+  .card-background{
+    background-size: 765px;
+    background-position: right -245px top -43px;
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+    padding-bottom: 5rem;
+  }
+  .card-background h3{
+    max-width: 40rem;
+  }
+}
+
+@media only screen and (min-width:1366px) and (max-width:1439px) {
+  .card-background{
+    background-position: bottom -309px right -4px;
+    background-size: 860px;
+    padding-bottom: 30rem;
+  }
+}
+
+@media only screen and (min-width:1280px) and (max-width:1365px) {
+  .card-background{
+    background-position: bottom -309px right -4px;
+    background-size: 860px;
+    padding-bottom: 30rem;
+  }
+}
+
+
+@media only screen and (min-width:1024px) and (max-width:1279px)  {
+  .card-background{
+    background-position: top 474px right -9px;
+    background-size: 725px;
+    padding-top: 5rem;
+    padding-bottom: 30rem 
+  }
+}
+
+@media only screen and (min-width:980px) and (max-width:1023px) {
+  .card-background{
+    background-position: top 387px right 2px;
+    background-size: 788px;
+    padding-top: 5rem;
+    padding-bottom: 30rem 
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:979px) {
+  .card-background{
+    background-position: top 391px right -43px;
+    background-size: 660px;
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width:767px) {
+  .card-background{
+    background-position: top 288px right -49px;
+    background-size: 558px;
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (min-width:480px) and (max-width:639px) {
+  .nav-list{
+    justify-content: space-around;
+  }
+  .notification{
+    top: -24px;
+    left: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem
+  }
+  header{
+    gap: 2.5rem;
+  }
+  .head-logo{
+    width: 6rem;
+  }
+  .head-ul-logo{
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-div{
+    align-items: center;
+  }
+  .quote-btn{
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+  }
+  .quote{
+    font-size: 0.7rem;
+    max-width: 4rem;
+  }
+  .login-main{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .form-div{
+    width: 100%;
+  }
+  .inputGroup h4{
+    font-size: 1.25rem;
+  }
+  .lableText{
+    font-size: 0.87rem;
+  }
+  .linkGroup a span{
+    font-size: 0.87rem;
+  }
+  .linkGroup a p{
+    font-size: 0.87rem;
+  }
+  .main-baner-box{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .card-background{
+    background-size: 454px;
+    background-position:  top 345px right -63px;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 22rem;
+  }
+  .card-background h3{
+    max-width: 20rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+
+  }
+  .card-para{
+    max-width: 17rem;
+    font-size: 0.87rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width:479px) {
+  .head-logo {
+    width: 6.6rem;
+  }
+  .head-ul-logo{
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  .head {
+    padding-top: 0.62rem;
+    padding-bottom: 0.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .notification{
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+    top: -24px;
+  }
+  .quote-btn {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .quote-btn p {
+    font-size: 0.7rem;
+  }
+  .nav-list {
+    gap: 1.5rem;
+    justify-content: space-around;
+    padding: 0.75rem 0.625rem;
+  }
+  .quote {
+    max-width: 3.3rem;
+  }
+  .login-main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .form-div {
+    width: 100%;
+    background: none;
+  }
+  
+  .inputGroup h4 {
+    font-size: 1.5rem;
+  }
+  .lable-div{
+    gap: 1.25rem;
+  }
+  .main-baner-box {
+    padding-left: 1.41rem;
+    padding-right: 1.41rem;
+  }
+  .baner-content {
+    overflow: hidden;
+    gap: 4rem;
+  }
+  .banner {
+    gap: 0.5rem;
+  }
+  .baner-box{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.81rem;
+  }
+  .baner-box div h3 {
+    font-size: 2rem;
+    gap: 1.5rem;
+  }
+  .baner-para {
+    max-width: 20rem;
+  }
+  .gradientBg {
+    bottom: 0;
+    left: 0;
+    width: 40rem;
+    height: 20rem;
+  }
+  .btn-task p{
+    font-size: 0.8rem;
+  }
+
+  .card-background{
+    background-size: 375px;
+    background-position:  right -68px top 400px;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 22rem;
+  }
+  .card-background h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .card-para{
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen  and (min-width:275px) and (max-width:374px) {
+  .nav-list{
+    gap: 10px;
+  }
+  .head-logo {
+    width: 6.6rem;
+  }
+  .head-ul-logo{
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  .head {
+    padding-top: 0.62rem;
+    padding-bottom: 0.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .notification{
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+    top: -24px;
+  }
+  .quote-btn {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .quote-btn p {
+    font-size: 0.7rem;
+  }
+  .nav-list {
+    gap: 1.5rem;
+    justify-content: space-around;
+    padding: 0.75rem 0.625rem;
+  }
+  .quote {
+    max-width: 3.3rem;
+  }
+  .login-main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .form-div {
+    width: 100%;
+    background: none;
+  }
+  
+  .inputGroup h4 {
+    font-size: 1.5rem;
+  }
+  .lable-div{
+    gap: 1.25rem;
+  }
+  .main-baner-box {
+    padding-left: 1.41rem;
+    padding-right: 1.41rem;
+  }
+  .baner-content {
+    overflow: hidden;
+    gap: 4rem;
+  }
+  .banner {
+    gap: 0.5rem;
+  }
+  .baner-box{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.81rem;
+  }
+  .baner-box div h3 {
+    font-size: 2rem;
+    gap: 1.5rem;
+  }
+  .baner-para {
+    max-width: 20rem;
+  }
+  .gradientBg {
+    bottom: 0;
+    left: 0;
+    width: 40rem;
+    height: 20rem;
+  }
+  .btn-task p{
+    font-size: 0.8rem;
+  }
+
+  .card-background{
+    background-size: 412px 375px;
+    background-position:  top 373px right -102px;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 22rem;
+  }
+  .card-background h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .card-para{
+    margin-bottom: 1.5rem;
+  }
+}

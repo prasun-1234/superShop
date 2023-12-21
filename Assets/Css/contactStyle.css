@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/*  Global Variables */
+:root {
+  --border-color: radial-gradient(
+    13932987.76% 52.13% at 50% 2900%,
+    #fff 0%,
+    #020617 100%
+  );
+  --border-right-gradient: radial-gradient(
+    66.2% 24750% at 50% 50%,
+    #909090 1.56%,
+    #020617 100%
+  );
+  --color-button: #ea580c;
+  --paragraph-color: #cbd5e1;
+  --heading-color: #fff;
+  --backgroun-color: #1e293b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020617;
+  font-family: "Inter", sans-serif !important;
+}
+
+.sideNav {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+.nav-list {
+  background-color: #1e293b;
+}
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-icon p {
+  color: var(--heading-color);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  max-width: 6rem;
+  transition: 0.3s ease;
+}
+svg path {
+  transition: 0.3s ease;
+}
+.nav-icon:hover svg path {
+  /* stroke: #fff; */
+  opacity: 0.5;
+}
+.nav-icon:hover p {
+  opacity: 0.5;
+}
+
+.listButton p {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--heading-color);
+}
+
+.url-text p {
+  color: var(--paragraph-color);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.left-header {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  color: var(--heading-color);
+}
+.custom-text {
+  background: linear-gradient(90deg, #6dffc1 32.63%, #bd9eff 49.41%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Manrope;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+}
+.left-para {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  color: var(--paragraph-color);
+}
+
+.right-header {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--heading-color);
+}
+.lableText {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  color: var(--heading-color);
+}
+
+label input::placeholder {
+  color: #cbd5e1;
+}
+label input {
+  color: var(--paragraph-color);
+  border: none;
+  outline: none;
+}
+.bgColor {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) -59%,
+    rgba(2, 6, 23, 1) 100%
+  );
+  padding: 1px;
+}
+label input:focus .bgColor:focus {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) -59%,
+    rgba(2, 6, 23, 1) 100%
+  );
+  padding: 1px;
+  /* outline: none; Remove the default outline style */
+}
+#phone-number {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+#phone-number::-webkit-inner-spin-button,
+#phone-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#phone-number {
+  appearance: none;
+}
+
+.button-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.hrLine{
+    background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) -59%,
+    rgba(2, 6, 23, 1) 100%
+  );
+  padding: 1px;
+}
