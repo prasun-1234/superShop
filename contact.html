@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/Assets/Css/contactStyle.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto xl:gap-12 lg:gap-0  border-red-600">
         <aside class="bg-slate-800 lg:max-w-[7rem] lg:relative fixed bottom-0 left-0 w-full z-[100]">
@@ -202,9 +204,9 @@
             </nav>
         </aside>
 
-        <main class="h-auto w-full">
+        <main class="h-auto w-full relative">
             <header
-                class="head flex flex-col lg:py-9 py-[1.62rem] px-6 xl:px-12 lg:px-8 md:px-6 md:py-7  xl:gap-10 md:gap-6 sm:gap-5">
+                class="head flex flex-col lg:py-9 py-[1.62rem] px-6 xl:px-12 lg:px-8 md:px-6 md:py-7  xl:gap-10 md:gap-6 sm:gap-5   z-50   bg-inherit   absolute  right-0 w-full h-auto">
                 <div class="header-div flex justify-between sm:items-start w-full ">
                     <a href="#" class="flex justify-center items-center ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="head-logo sm:max-w-[8rem]" width="192"
@@ -289,7 +291,7 @@
 
                     </a>
 
-                    <ul class="flex items-center lg:gap-8 gap-5 xl:mr-12 lg:mr-0 mr-0">
+                    <ul class="flex items-center lg:gap-8 gap-5 lg:mr-0 mr-0">
                         <li>
                             <a href="#" class=" ">
                                 <svg width="45" height="44" class="head-ul-logo sm:max-w-[3rem] sm:max-h-[3rem]"
@@ -377,7 +379,7 @@
                             <button
                                 class="quote-btn flex justify-center items-center sm:px-0 sm:py-[0.6rem] lg:px-8 xl:px-4 xl:py-2 rounded-[3.3rem] listButton bg-[#ea580c]">
                                 <p
-                                    class="quote xl:text-base md:max-w-[6rem] xl:max-w-[11rem] sm:max-w-[4rem] sm:text-[0.7rem] ">
+                                    class="quote xl:text-base md:max-w-[4rem] xl:max-w-[11rem] sm:max-w-[4rem] sm:text-[0.7rem] ">
                                     GET A
                                     QUOTE
                                 </p>
@@ -391,130 +393,95 @@
                 </div>
             </header>
 
-            <section class="contact-container mt-5 mb-52 ">
-                <div class="px-12 w-full h-auto flex gap-20     lg:flex-row flex-col    justify-start  mb-[4.1rem]">
-                    <div class="w-full  relative">
-                        <span class="
-                            absolute
-                            right-0
-                            bottom-0
-                            max-w-[22rem]
-                            max-h-[44rem]
-                            rotate-[57deg]
-                            bg-[#143092]
-                            blur-[81px]">
-                        </span>
-                        <h3 class="left-header 2xl:max-w-[47rem] 2xl:text-[3rem] mb-6">
-                            Your own <span class="custom-text">Shopify</span> Design & Development Team
-                        </h3>
-                        <p class="left-para 2xl:max-w-[35rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. 
-                        </p>
-                        <div class="imgDiv mt-[3.1rem]   w-full h-full">
-                            <img src="/Assets/Images/fashion-wear.png" alt="">
-                        </div>
-                    </div>
+            <section
+                class="contact-container flex 2xl:flex-row flex-col  items-center justify-between   relative ">
+
+                <div class="inputDiv flex flex-col items-start justify-center  py-40   ps-12   lg:px-12  lg:pb-12  md:px-8 md:pb-20  sm:px-8 sm:pb-12">
 
 
-                    <div class="  w-full  h-full 2xl:order-last flex items-start 2xl:flex-col  lg:order-first">
-                        
-                        <h4 class="right-header mb-10 2xl:max-w-[47rem] 2xl:text-[2.25rem]">Let’s Talk Business...</h4>
-
-                        <form class="formGroup 
-                            w-full flex flex-col gap-[1.5rem]">
-
-                            <div class="nameGroup 
-                                flex  gap-[1.81rem]">
-
-                                <label id="first-name-label" for="first-name" class="flex flex-col w-full">
-                                    <span class="lableText">First Name </span>
-                                    <div class="bgColor flex mt-2 mb-2">
-                                        <input class=" required:-red-500  w-full px-5 py-3 rounded-md bg-[#1e293b]"
-                                            type="text" 
-                                            id="first-name" 
-                                            placeholder="First Name"
-                                            aria-labelledby="first-name"
-                                        />
-                                    </div>
-                                    <p class="flex gap-0 ex-para text-[1rem] invalidPara">
-                                        <img src="/Assets/Images/ex-mark.png" alt="" class="">
-                                        Please Provide a valid Input
-                                    </p>
-
-                                </label>
-
-                                <label id="last-name" for="last-name" class="flex flex-col w-full">
-                                    <span class="lableText">Last Name </span>
-                                    <div class="bgColor flex mt-2">
-                                        <input class=" required:-red-500  w-full px-5 py-3 rounded-md bg-[#1e293b]"
-                                            type="text" 
-                                            id="last-name" 
-                                        placeholder="Last Name"
-                                        aria-labelledby="last-name"
-                                        />
-                                    </div>
-                                    <p class="flex gap-0 ex-para text-[1rem] invalidPara">
-                                        <img src="/Assets/Images/ex-mark.png" alt="" class="">
-                                        Please Provide a valid Input
-                                    </p>
-                                </label>                           
-                            </div>
-                            <label id="last-name" for="last-name" class="flex flex-col w-full">
-                                <span class="lableText">Email Address  </span>
-                                <div class="bgColor flex mt-2">
-                                    <input class=" required:-red-500  w-full px-5 py-3 rounded-md bg-[#1e293b]"
-                                        type="email" 
-                                        id="email-address" 
-                                        placeholder="Your Email"
-                                        aria-labelledby="email-address"
-                                    />
+                    <div class="2xl:max-w-[36.625rem] 2xl:max-h-[48rem]">
+                        <h4 class="right-header mb-10 2xl:max-w-[36.5rem] 2xl:text-[3rem]">Reach out to us for support &
+                            inquiries...
+                        </h4>
+                        <form action="post" class="formGroup flex items-start flex-col  w-full  gap-6">
+                            <label id="first-name-label" for="first-name" class="flex flex-col w-full">
+                                <span class="lableText">Your Name </span>
+                                <div class="bgColor flex mt-2 mb-2">
+                                    <input class=" required:-red-500  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]"
+                                        type="text" id="first-name" placeholder="First Name"
+                                        aria-labelledby="first-name" />
                                 </div>
-                                <p class="flex gap-0 ex-para text-[1rem] invalidPara">
+                                <p class=" gap-0 ex-para text-[1rem] invalidPara hidden">
                                     <img src="/Assets/Images/ex-mark.png" alt="" class="">
                                     Please Provide a valid Input
                                 </p>
-                            </label>   
-                            <label id="last-name" for="last-name" class="flex flex-col w-full">
-                                <span class="lableText">Phone Number </span>
+
+                            </label>
+
+                            <label id="" for="email-address" class="flex flex-col w-full">
+                                <span class="lableText">Email Address </span>
                                 <div class="bgColor flex mt-2">
-                                    <input class=" required:-red-500  w-full px-5 py-3 rounded-md bg-[#1e293b]"
-                                        type="number" 
-                                        id="phone-number" 
-                                        placeholder="+91"
-                                        aria-labelledby="phone-number"
-                                    />
+                                    <input class=" required:-red-500  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]"
+                                        type="email" id="email-address" placeholder="Your Email" id="email-address"
+                                        aria-labelledby="email-address" />
                                 </div>
-                                <p class="flex gap-0 ex-para text-[1rem] invalidPara">
+                                <p class=" gap-0 ex-para text-[1rem] invalidPara hidden">
                                     <img src="/Assets/Images/ex-mark.png" alt="" class="">
                                     Please Provide a valid Input
                                 </p>
-                            </label> 
+                            </label>
+
+                            <label id="select-topic-label" for="select-topic" class="flex flex-col w-full">
+                                <span class="lableText">Select Topic </span>
+                                <div class="bgColor flex mt-2">
+                                    <select
+                                        class="required:-red-500 w-full px-5 py-[0.6rem] rounded-md text-[#cbd5e1] bg-[#1e293b]" aria-labelledby="select-topic-label"
+                                        aria-describedby="select-topic-description">
+                                        <option value="" class="">Development</option>
+                                        <option value="topic1" class="">Design</option>
+                                        <option value="topic2" class="">Development</option>
+                                        <option value="topic3" class="">Marketing</option>
+                                    </select>
+                                </div>
+                                <p id="select-topic-description" class=" gap-0 ex-para text-[1rem] invalidPara hidden">
+                                    <img src="/Assets/Images/ex-mark.png" alt="" class="">
+                                    Please select a topic from the dropdown.
+                                </p>
+                            </label>
+
                             <label id="message-label" for="message-input" class="flex flex-col w-full">
                                 <span class="lableText">Your Message </span>
                                 <div class="bgColor flex mt-2 ">
-                                    <textarea class="required:-red-500  w-full pt-[0.6rem] px-5 pb-[5.62rem]  rounded-md bg-[#1e293b]"
-                                        name="message-input" 
-                                        id="message-input"   
-                                        aria-labelledby="message-label" 
+                                    <textarea
+                                        class="required:-red-500  w-full pt-[0.6rem] px-5 pb-[5.62rem]  rounded-md bg-[#1e293b]"
+                                        name="message-input" id="message-input" aria-labelledby="message-label"
                                         placeholder="Message"></textarea>
                                 </div>
-                                
-                            </label> 
+
+                            </label>
 
                             <button type="submit"
-                                    class="loginBtn w-full bg-[#ea580c] rounded-[3.13rem] flex justify-center xl:px-[22.38rem] lg:px-[20rem] py-3 z-10">
-                                    <p class="text-[#fff] text-[1rem] button-text ">SUBMIT</p>
+                                class="loginBtn w-full bg-[#ea580c] rounded-[3.13rem] flex justify-center  py-3 z-10 mt-4">
+                                <p class="text-[#fff] text-[1rem] button-text ">SUBMIT</p>
                             </button>
-                            
-                        </form>
 
+                        </form>
                     </div>
+
                 </div>
-                <span class="hrLine w-full flex "></span>
+
+                <div class="imgDiv ">
+                    <img src="Assets/Images/contact-baner.png" alt=" " class="w-full h-full object-cover">
+                </div>
+
             </section>
+            <span class="hrLine w-full flex mb-16"></span>
+
 
         </main>
     </div>
 
 </body>
+
 </html>
+

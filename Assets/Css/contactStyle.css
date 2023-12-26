@@ -114,10 +114,11 @@ svg path {
 }
 
 .right-header {
-  font-family: Inter;
+  font-family: Manrope;
+  font-size: 3rem;
   font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
+  font-weight: 800;
+  line-height: 120%;
   color: var(--heading-color);
 }
 .lableText {
@@ -151,9 +152,11 @@ label input:focus .bgColor:focus {
     rgba(255, 255, 255, 1) -59%,
     rgba(2, 6, 23, 1) 100%
   );
-  padding: 1px;
-  /* outline: none; Remove the default outline style */
 }
+
+/* #select-topic option{
+  color: red;
+} */
 #phone-number {
   -moz-appearance: textfield; /* Firefox */
 }
@@ -189,9 +192,184 @@ label input:focus .bgColor:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
-  color: #EF4444;
+  color: #ef4444;
   text-align: center;
 }
-.invalidPara{
-    display: block;
+.invalidPara {
+  display: none;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  .nav-list {
+    justify-content: space-around;
+  }
+  .notification {
+    top: -24px;
+    left: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  header {
+    gap: 2.5rem;
+  }
+  .head {
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .head-logo {
+    width: 11rem;
+  }
+  .head-ul-logo {
+    width: 3rem;
+    height: 3rem;
+  }
+  .header-div {
+    align-items: center;
+  }
+  .quote-btn {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  .quote {
+    font-size: 0.7rem;
+    max-width: 4rem;
+  }
+
+
+
+  .right-header{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+  .inputDiv{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 3rem;
+  }
+  .formGroup{
+    gap: 1.25rem;
+  }
+ 
+}
+
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .nav-list {
+    justify-content: space-around;
+  }
+  .notification {
+    top: -24px;
+    left: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  header {
+    gap: 2.5rem;
+  }
+  .head {
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .head-logo {
+    width: 6rem;
+  }
+  .head-ul-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-div {
+    align-items: center;
+  }
+  .quote-btn {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .quote {
+    font-size: 0.7rem;
+    max-width: 4rem;
+  }
+
+
+
+  .right-header{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+  .inputDiv{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 3rem;
+  }
+  .formGroup{
+    gap: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 275px) and (max-width: 374px) {
+  .nav-list {
+    justify-content: space-around;
+  }
+  .notification {
+    top: -24px;
+    left: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  header {
+    gap: 2.5rem;
+  }
+  .head {
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .head-logo {
+    width: 6rem;
+  }
+  .head-ul-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-div {
+    align-items: center;
+  }
+  .quote-btn {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .quote {
+    font-size: 0.7rem;
+    max-width: 4rem;
+  }
+
+
+
+  .right-header{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+  .inputDiv{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 3rem;
+  }
+  .formGroup{
+    gap: 1.25rem;
+  }
 }
