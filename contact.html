@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto xl:gap-12 lg:gap-0  border-red-600">
+    <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto 2xl:gap-12 xl:gap-0 lg:gap-0  border-red-600">
         <aside class="bg-slate-800 lg:max-w-[7rem] lg:relative fixed bottom-0 left-0 w-full z-[100]">
             <nav
                 class="sideNav w-full h-auto lg:h-[100dvh] duration-150 ease-in-out sticky top-0 left-0 z-[899]   lg:pr-[2px] lg:pt-0 pt-[2px]">
@@ -291,7 +291,7 @@
 
                     </a>
 
-                    <ul class="flex items-center lg:gap-8 gap-5 lg:mr-0 mr-0">
+                    <ul class="header-logo-list flex items-center lg:gap-8 sm:gap-5 lg:mr-0 mr-0">
                         <li>
                             <a href="#" class=" ">
                                 <svg width="45" height="44" class="head-ul-logo sm:max-w-[3rem] sm:max-h-[3rem]"
@@ -393,23 +393,22 @@
                 </div>
             </header>
 
-            <section
-                class="contact-container flex 2xl:flex-row flex-col  items-center justify-between   relative ">
 
-                <div class="inputDiv flex flex-col items-start justify-center  py-40   ps-12   lg:px-12  lg:pb-12  md:px-8 md:pb-20  sm:px-8 sm:pb-12">
+            <section class="contact-container flex 2xl:flex-row flex-col  items-center justify-between mb-32   relative ">
+
+                <div class="inputDiv w-full 2xl:w-auto  flex flex-col items-start justify-center  2xl:py-16 xl:pt-40 xl:pb-20 pt-40  2xl:pl-12 xl:pl-12 lg:pl-12   lg:px-12  lg:pb-12  md:px-8 md:pb-20  sm:px-8 sm:pb-12">
 
 
-                    <div class="2xl:max-w-[36.625rem] 2xl:max-h-[48rem]">
-                        <h4 class="right-header mb-10 2xl:max-w-[36.5rem] 2xl:text-[3rem]">Reach out to us for support &
+                    <div class="2xl:max-w-[36.625rem] h-auto 2xl:w-auto w-full">
+                        <h4 class="right-header mb-10 2xl:max-w-[36.5rem] ">Reach out to us for support &
                             inquiries...
                         </h4>
                         <form action="post" class="formGroup flex items-start flex-col  w-full  gap-6">
                             <label id="first-name-label" for="first-name" class="flex flex-col w-full">
                                 <span class="lableText">Your Name </span>
                                 <div class="bgColor flex mt-2 mb-2">
-                                    <input class=" required:-red-500  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]"
-                                        type="text" id="first-name" placeholder="First Name"
-                                        aria-labelledby="first-name" />
+                                    <input class=" myInput  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]"
+                                        type="text" id="first-name" aria-labelledby="first-name" required />
                                 </div>
                                 <p class=" gap-0 ex-para text-[1rem] invalidPara hidden">
                                     <img src="/Assets/Images/ex-mark.png" alt="" class="">
@@ -421,9 +420,10 @@
                             <label id="" for="email-address" class="flex flex-col w-full">
                                 <span class="lableText">Email Address </span>
                                 <div class="bgColor flex mt-2">
-                                    <input class=" required:-red-500  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]"
-                                        type="email" id="email-address" placeholder="Your Email" id="email-address"
-                                        aria-labelledby="email-address" />
+                                    <input class=" myInput  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]"
+                                        type="email" id="email-address" id="email-address"
+                                        aria-labelledby="email-address" required 
+                                    />
                                 </div>
                                 <p class=" gap-0 ex-para text-[1rem] invalidPara hidden">
                                     <img src="/Assets/Images/ex-mark.png" alt="" class="">
@@ -435,7 +435,8 @@
                                 <span class="lableText">Select Topic </span>
                                 <div class="bgColor flex mt-2">
                                     <select
-                                        class="required:-red-500 w-full px-5 py-[0.6rem] rounded-md text-[#cbd5e1] bg-[#1e293b]" aria-labelledby="select-topic-label"
+                                        class="myInput w-full px-5 py-[0.6rem] rounded-md text-[#cbd5e1] bg-[#1e293b]"
+                                        aria-labelledby="select-topic-label"
                                         aria-describedby="select-topic-description">
                                         <option value="" class="">Development</option>
                                         <option value="topic1" class="">Design</option>
@@ -453,9 +454,9 @@
                                 <span class="lableText">Your Message </span>
                                 <div class="bgColor flex mt-2 ">
                                     <textarea
-                                        class="required:-red-500  w-full pt-[0.6rem] px-5 pb-[5.62rem]  rounded-md bg-[#1e293b]"
-                                        name="message-input" id="message-input" aria-labelledby="message-label"
-                                        placeholder="Message"></textarea>
+                                        class="myInput  w-full pt-[0.6rem] px-5 pb-[5.62rem]  rounded-md bg-[#1e293b]"
+                                        name="message-input" id="message-input"
+                                        aria-labelledby="message-label"></textarea>
                                 </div>
 
                             </label>
@@ -470,18 +471,16 @@
 
                 </div>
 
-                <div class="imgDiv ">
+                <div class="imgDiv xl:w-full 2xl:w-auto w-full">
                     <img src="Assets/Images/contact-baner.png" alt=" " class="w-full h-full object-cover">
                 </div>
 
             </section>
-            <span class="hrLine w-full flex mb-16"></span>
 
-
+           
         </main>
     </div>
 
 </body>
 
 </html>
-

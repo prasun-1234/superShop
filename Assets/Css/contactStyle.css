@@ -135,7 +135,11 @@ label input::placeholder {
 }
 label input {
   color: var(--paragraph-color);
-  border: none;
+}
+
+label textarea {
+  color: var(--paragraph-color);
+  border: 3px solid transparent;
   outline: none;
 }
 .bgColor {
@@ -144,19 +148,23 @@ label input {
     rgba(255, 255, 255, 1) -59%,
     rgba(2, 6, 23, 1) 100%
   );
-  padding: 1px;
 }
-label input:focus .bgColor:focus {
-  background: radial-gradient(
+
+.myInput {
+  background-color: #1e293b;
+  outline: none;
+  border: 1px solid transparent;
+}
+.myInput:focus {
+  border-image: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) -59%,
     rgba(2, 6, 23, 1) 100%
   );
+  border-image-slice: 1;
 }
 
-/* #select-topic option{
-  color: red;
-} */
+
 #phone-number {
   -moz-appearance: textfield; /* Firefox */
 }
@@ -201,9 +209,26 @@ label input:focus .bgColor:focus {
 
 
 
+@media only screen and (min-width:1800px) and (max-width:1920px) {
+  .right-header{
+    font-size: 3rem;
+  }
+}
 
 
+@media only screen and (min-width:1600px) and (max-width:1799px) {
+  .right-header{
+    margin-top: 6rem;
+    font-size: 2rem;
+  }
+}
 
+@media only screen and (min-width:1536px) and (max-width:1599px) {
+  .right-header{
+    margin-top: 6rem;
+    font-size: 2rem;
+  }
+}
 
 @media only screen and (min-width: 480px) and (max-width: 639px) {
   .nav-list {
@@ -226,7 +251,8 @@ label input:focus .bgColor:focus {
     gap: 2.5rem;
   }
   .head-logo {
-    width: 11rem;
+    width: 8rem;
+    height: 3rem;
   }
   .head-ul-logo {
     width: 3rem;
@@ -235,31 +261,33 @@ label input:focus .bgColor:focus {
   .header-div {
     align-items: center;
   }
+  .header-logo-list{
+    gap: 1rem;
+  }
   .quote-btn {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .quote {
     font-size: 0.7rem;
     max-width: 4rem;
   }
 
-
-
-  .right-header{
+  .right-header {
     margin-top: 2rem;
     font-size: 2rem;
     margin-bottom: 1.25rem;
   }
-  .inputDiv{
+  .inputDiv {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 3rem;
   }
-  .formGroup{
+  .formGroup {
     gap: 1.25rem;
   }
- 
 }
 
 @media screen and (min-width: 375px) and (max-width: 479px) {
@@ -292,28 +320,29 @@ label input:focus .bgColor:focus {
   .header-div {
     align-items: center;
   }
+  .header-logo-list{
+    gap: 10px;
+  }
   .quote-btn {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .quote {
     font-size: 0.7rem;
-    max-width: 4rem;
+    max-width: 3rem;
   }
 
-
-
-  .right-header{
+  .right-header {
     margin-top: 2rem;
     font-size: 2rem;
     margin-bottom: 1.25rem;
   }
-  .inputDiv{
+  .inputDiv {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 3rem;
   }
-  .formGroup{
+  .formGroup {
     gap: 1.25rem;
   }
 }
@@ -348,28 +377,30 @@ label input:focus .bgColor:focus {
   .header-div {
     align-items: center;
   }
+  .header-logo-list{
+    gap: 10px;
+  }
+
   .quote-btn {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
   }
   .quote {
     font-size: 0.7rem;
-    max-width: 4rem;
+    max-width: 3rem;
   }
 
-
-
-  .right-header{
+  .right-header {
     margin-top: 2rem;
     font-size: 2rem;
     margin-bottom: 1.25rem;
   }
-  .inputDiv{
+  .inputDiv {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 3rem;
   }
-  .formGroup{
+  .formGroup {
     gap: 1.25rem;
   }
 }
