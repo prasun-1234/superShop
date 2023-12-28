@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
-    <link rel="stylesheet" href="/Assets/Css/contactStyle.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Assets/Css/loginPageStyle.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -208,8 +208,7 @@
         </aside>
 
         <main class="h-auto w-full relative">
-            <header
-                class="head flex flex-col lg:py-9 py-[1.62rem] 2xl:px-8 px-6 md:py-7  xl:gap-10 md:gap-6 sm:gap-5   z-50   bg-inherit   absolute  right-0 w-full h-auto">
+            <header class="head flex flex-col lg:py-9 py-[1.62rem] 2xl:px-8 px-6 md:py-7  xl:gap-10 md:gap-6 sm:gap-5   z-50   bg-inherit   absolute  right-0 w-full h-auto">
                 <div class="header-div flex justify-between sm:items-start w-full ">
                     <a href="#" class="flex justify-center items-center ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="head-logo sm:max-w-[8rem]" width="192"
@@ -379,10 +378,8 @@
                             </a>
                         </li>
                         <li>
-                            <button
-                                class="quote-btn flex justify-center items-center sm:px-4 sm:py-[0.6rem] lg:px-8 md:px-4 xl:px-4 xl:py-2 rounded-[3.3rem] listButton bg-[#ea580c]">
-                                <p
-                                    class="quote xl:text-base md:max-w-[6rem] xl:max-w-[11rem] lg:max-w-[6rem] sm:max-w-[6rem] sm:text-[0.7rem] ">
+                            <button class="quote-btn flex justify-center items-center sm:px-4 sm:py-[0.6rem] lg:px-8 md:px-4 xl:px-4 xl:py-2 rounded-[3.3rem] listButton bg-[#ea580c]">
+                                <p class="quote xl:text-base md:max-w-[6rem] xl:max-w-[11rem] lg:max-w-[6rem] sm:max-w-[6rem] sm:text-[0.7rem] ">
                                     GET A
                                     QUOTE
                                 </p>
@@ -397,19 +394,15 @@
             </header>
 
 
-            <section class="contact-container grid xl:grid-cols-12 2xl:gap-28 xl:gap-8 md:gap-12 sm:gap-10 items-center mb-32 relative ">
+            <section class="contact-container grid xl:grid-cols-12 2xl:gap-28 xl:gap-16 md:gap-12 sm:gap-10 items-center mb-32 relative ">
+                <div class="2xl:pl-8 lg:px-[1.25rem] px-5 pl-6 xl:col-span-5 col-span-12 pt-48 xl:pb-48">
+                    <div class="inputDiv flex flex-col items-start 2xl:gap-10 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-10 h-auto w-full">
+                        <h3 class="right-header 2xl:max-w-[36.5rem] ">Login to your account..
+                        </h3>
 
-                <div class="inputDiv 2xl:pl-8 lg:px-[1.25rem] px-5 pl-6 xl:col-span-5 col-span-12 pt-48 xl:pb-48">
-
-
-                    <div
-                        class="flex flex-col items-start 2xl:gap-10 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-10 h-auto w-full">
-                        <h4 class="right-header  2xl:max-w-[36.5rem] ">Reach out to us for support &
-                            inquiries...
-                        </h4>
                         <form action="post" class="formGroup flex items-start flex-col  w-full  gap-6">
                             <label id="first-name-label" for="first-name" class="flex flex-col w-full">
-                                <span class="lableText">Your Name </span>
+                                <span class="lableText">Email Address </span>
                                 <div class="bgColor flex mt-2 mb-2">
                                     <input class=" myInput  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]" type="text"
                                         id="first-name" aria-labelledby="first-name" required />
@@ -422,7 +415,7 @@
                             </label>
 
                             <label id="" for="email-address" class="flex flex-col w-full">
-                                <span class="lableText">Email Address </span>
+                                <span class="lableText">Password </span>
                                 <div class="bgColor flex mt-2">
                                     <input class=" myInput  w-full px-5 py-[0.6rem] rounded-md bg-[#1e293b]"
                                         type="email" id="email-address" id="email-address"
@@ -434,50 +427,28 @@
                                 </p>
                             </label>
 
-                            <label id="select-topic-label" for="select-topic" class="flex flex-col w-full">
-                                <span class="lableText">Select Topic </span>
-                                <div class="bgColor relative flex mt-2">
-                                    <select
-                                        class="myInput custom-select w-full px-5 py-[0.6rem] rounded-md text-[#cbd5e1] bg-[#1e293b]"
-                                        aria-labelledby="select-topic-label"
-                                        aria-describedby="select-topic-description">
-                                        <option value="" class="">Development</option>
-                                        <option value="topic1" class="">Design</option>
-                                        <option value="topic2" class="">Development</option>
-                                        <option value="topic3" class="">Marketing</option>
-                                    </select>
-                                    <img src="Assets/Images/down-arrow.png" alt="" class="custom-arrow">
-                                </div>
-                                <p id="select-topic-description" class=" gap-0 ex-para text-[1rem] invalidPara hidden">
-                                    <img src="/Assets/Images/ex-mark.png" alt="" class="">
-                                    Please select a topic from the dropdown.
-                                </p>
-                            </label>
-
-                            <label id="message-label" for="message-input" class="flex flex-col w-full">
-                                <span class="lableText">Your Message </span>
-                                <div class="bgColor flex mt-2 ">
-                                    <textarea
-                                        class="myInput  w-full pt-[0.6rem] px-5 pb-[5.62rem]  rounded-md bg-[#1e293b] resize-none"
-                                        name="message-input" id="message-input"
-                                        aria-labelledby="message-label"></textarea>
-                                </div>
-
-                            </label>
-
                             <button type="submit"
-                                class="loginBtn w-full bg-[#ea580c] rounded-[3.13rem] flex justify-center  py-3 z-10 mt-4">
-                                <p class="text-[#fff] text-[1rem] button-text ">SUBMIT</p>
+                                class="loginBtn w-full bg-[#ea580c] rounded-[3.13rem] flex justify-center  py-3 z-10 mt-4 ">
+                                <p class="text-[#fff] text-[1rem] button-text ">LOGIN</p>
                             </button>
+                            
 
                         </form>
-                    </div>
 
+                        <div class="linkGroup w-full  flex xl:gap-10 gap-8  xl:flex-row lg:flex-row md:flex-row flex-col justify-start">
+                            <a href="#" class="flex justify-center items-center">
+                                <span class="animate"> Forgot your password?</span>
+                            </a>
+                            <a href="#" class="flex justify-center items-center gap-[0.38rem]">
+                                <p class="text-[#cbd5e1]">New Customer ? </p>
+                                <span class="animate"> Create an Account</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="imgDiv h-full xl:col-span-7 col-span-12">
-                    <img src="Assets/Images/contact-baner.png" alt=" "
-                        class="w-full h-full object-cover xl:min-h-[75rem]">
+                    <img src="Assets/Images/login-img.png" alt=" " class="w-full h-full object-cover">
                 </div>
 
             </section>
@@ -485,7 +456,6 @@
 
         </main>
     </div>
-
 </body>
 
 </html>

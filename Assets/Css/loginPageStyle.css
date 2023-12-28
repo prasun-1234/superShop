@@ -92,33 +92,15 @@ svg path {
   line-height: 180%;
 }
 
-/* --------------- SECTION START HERE -------------- */
-
-.left-header {
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
-  color: var(--heading-color);
-}
-.custom-text {
-  background: linear-gradient(90deg, #6dffc1 32.63%, #bd9eff 49.41%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Manrope;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
-}
-.left-para {
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-  color: var(--paragraph-color);
+/* SECTION STARTS HERE */
+.contact-container {
+  border-width: 0 0 2px 0;
+  border-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) -59%,
+    rgba(2, 6, 23, 1) 100%
+  );
+  border-image-slice: 1;
 }
 
 .right-header {
@@ -145,11 +127,45 @@ label input {
   color: var(--paragraph-color);
 }
 
-label textarea {
-  color: var(--paragraph-color);
-  border: 3px solid transparent;
-  outline: none;
+.linkGroup a span {
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112%;
+  color: var(--heading-color);
+  text-decoration-line: underline;
 }
+.linkGroup a p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: center;
+}
+/* .animate {
+  display: inline-block;
+  position: relative;
+}
+.animate::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.animate:hover::after,
+.animate:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
 .bgColor {
   background: radial-gradient(
     circle,
@@ -170,37 +186,6 @@ label textarea {
     rgba(2, 6, 23, 1) 100%
   );
   border-image-slice: 1;
-}
-
-.custom-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 30px; 
-  width: 100%;
-  height: 3rem; 
-  cursor: pointer;
-}
-.custom-arrow {
-  position: absolute;
-  top: 50%;
-  right: 1.25rem; 
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-#phone-number {
-  -moz-appearance: textfield; /* Firefox */
-}
-
-#phone-number::-webkit-inner-spin-button,
-#phone-number::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-#phone-number {
-  appearance: none;
 }
 
 .button-text {
@@ -231,22 +216,20 @@ label textarea {
   display: none;
 }
 
-@media only screen and (min-width: 1800px)  {
+@media only screen and (min-width: 1800px) {
   .right-header {
     font-size: 3rem;
   }
-  .contact-container{
-    gap: 8rem;
+  .contact-container {
+    gap: 1rem;
   }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1799px) {
- 
-  .contact-container{
+  .contact-container {
     gap: 3rem;
   }
 }
-
 
 @media only screen and (min-width: 480px) and (max-width: 639px) {
   .nav-list {
@@ -293,23 +276,22 @@ label textarea {
     max-width: 4rem;
   }
 
-    /* SECTION START HERE */
-
+  /* SECTION START HERE */
+  .contact-container {
+    gap: 0;
+  }
   .right-header {
     margin-top: 2rem;
     font-size: 2rem;
-    margin-bottom: 1.25rem;
   }
-  .inputDiv {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-bottom: 3rem;
+  .inputDiv{
+    gap: 1.25rem;
   }
   .formGroup {
     gap: 1.25rem;
   }
-  .inputDiv{
-    padding-top: 10rem;
+  .imgDiv {
+    margin-top: 2.5rem;
   }
 }
 
@@ -349,29 +331,28 @@ label textarea {
   .quote-btn {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    padding-left: 3px;
+    padding-right: 3px;
   }
   .quote {
     font-size: 0.7rem;
     max-width: 3rem;
   }
 
-    /* SECTION START HERE */
+  /* SECTION START HERE */
 
   .right-header {
-    margin-top: 2rem;
     font-size: 2rem;
-    margin-bottom: 1.25rem;
   }
-  .inputDiv {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-bottom: 3rem;
-  }
+
   .formGroup {
     gap: 1.25rem;
   }
+  .imgDiv {
+    margin-top: 2.5rem;
+  }
   .inputDiv{
-    padding-top: 10rem;
+    gap: 1.25rem;
   }
 }
 
@@ -421,19 +402,15 @@ label textarea {
   /* SECTION START HERE */
 
   .right-header {
-    margin-top: 2rem;
     font-size: 2rem;
-    margin-bottom: 1.25rem;
-  }
-  .inputDiv {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-bottom: 3rem;
   }
   .formGroup {
     gap: 1.25rem;
   }
+  .imgDiv {
+    margin-top: 2.5rem;
+  }
   .inputDiv{
-    padding-top: 10rem;
+    gap: 1.25rem;
   }
 }
