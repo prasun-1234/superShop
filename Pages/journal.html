@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Journal Page</title>
-    <link rel="stylesheet" href="./Assets/Css/journal.css" />
+    <link rel="stylesheet" href="/Assets/Css/journal.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -13,11 +13,13 @@
     <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto xl:gap-12 lg:gap-0">
         <aside class="bg-slate-800 lg:max-w-[7rem] lg:relative fixed bottom-0 left-0 w-full z-[100]">
             <nav
-                class="sideNav w-full h-auto lg:h-[100dvh] duration-150 ease-in-out sticky top-0 left-0 z-[899] lg:pr-[2px] lg:pt-0 pt-[2px]">
+                class="sideNav w-full h-auto lg:h-[100dvh] duration-150 ease-in-out sticky top-0 left-0 z-[899]   lg:pr-[1px] lg:pt-0 pt-[1px]">
+
                 <ul
-                    class="nav-list w-full h-full flex md:flex-row lg:flex-col xl:gap-[2.75rem] lg:gap-14 md:gap-20 sm:gap-14 2xl:justify-center lg:justify-center md:justify-center sm:justify-center 2xl:items-center !py-[10px] lg:!py-0">
+                    class="nav-list  w-full h-full flex md:flex-row lg:flex-col  xl:gap-[2.75rem] lg:gap-14 md:gap-20 sm:gap-14 2xl:justify-center lg:justify-center md:justify-center sm:justify-center 2xl:items-center !py-[10px] lg:!py-0">
+
                     <li class=" ">
-                        <a href="#" class="nav-icon">
+                        <a href="#" class="nav-icon  ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -46,12 +48,22 @@
                             <p class="text-center hidden lg:block xl:block">Home</p>
                         </a>
                     </li>
-                    <li class=" ">
-                        <a href="#" class="nav-icon relative">
-                            <span
-                                class="notification absolute 2xl:top-[-9px] lg:top-[-9px] md:top-[-25px] sm:top-[-25px] 2xl:left-0 lg:left-0 md:left-0 sm:left-0 flex justify-center items-center 2xl:px-[0.62rem] lg:px-[0.62rem] md:px-[0.6rem] sm:px-[0.6rem] 2xl:py-[0.12rem] lg:py-[0.12rem] md:py-[0.12rem] sm:py-[0.12rem] bg-[#CBD5E1] rounded-[0.25rem]">
-                                New
-                            </span>
+                    <li class="relative ">
+                        <span class="notification 
+                                absolute text-[14px] z-10
+                                2xl:top-[-9px] lg:top-[-9px] md:top-[-25px] sm:top-[-25px]
+                                2xl:right-0 lg:right-0 md:right-0 sm:right-0
+                                flex 
+                                justify-center 
+                                items-center 
+                                2xl:px-[0.62rem] lg:px-[0.62rem] md:px-[0.47rem] sm:px-[0.47rem]
+                                2xl:py-[0.12rem]  lg:py-[0.12rem] md:py-[0.12rem] sm:py-[0.12rem]
+                                bg-[#CBD5E1] 
+                                rounded-[0.25rem]">
+                            New
+                        </span>
+                        <a href="#" class="nav-icon  ">
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <path d="M9.05554 33.6111H10.8889V20.7778H9.05554V33.6111Z" fill="white" />
@@ -65,11 +77,11 @@
                                 <path d="M36.5555 9.77779H34.7222V26.2778H36.5555V9.77779Z" fill="white" />
                                 <path d="M18.2222 7.94446V9.77779H34.7222V7.94446H18.2222Z" fill="white" />
                             </svg>
-                            <p class="text-center hidden lg:block xl:block">Shopify Task</p>
+                            <p class="text-center hidden lg:block xl:block ">Shopify Task</p>
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon">
+                        <a href="#" class="nav-icon  ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -96,13 +108,11 @@
                                     <path d="M31.6667 33V31.1666H28V33H31.6667Z" fill="white" />
                                 </g>
                             </svg>
-                            <p class="text-center hidden lg:block xl:block">
-                                Hire your own Team
-                            </p>
+                            <p class="text-center hidden lg:block xl:block">Hire your own Team</p>
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon">
+                        <a href="#" class="nav-icon  ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -131,7 +141,7 @@
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon">
+                        <a href="#" class="nav-icon  ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -156,11 +166,11 @@
                                     <path d="M17.0005 32.9998V34.8332L33.5005 34.8332V32.9998H17.0005Z" fill="white" />
                                 </g>
                             </svg>
-                            <p class="hidden lg:block xl:block">journal</p>
+                            <p class="hidden lg:block xl:block ">journal</p>
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon">
+                        <a href="#" class="nav-icon  ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -421,7 +431,7 @@
                     <div
                         class="gridBox grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-2 2xl:gap-x-[5.6rem] xl:gap-x-[4.6rem] lg:gap-x-[2rem] md:gap-x-[2rem] sm:gap-x-[2rem] 2xl:gap-y-[5rem] xl:gap-y-[4.5rem] lg:gap-y-[2rem] sm:gap-y-[2rem] grid-flow-row-dense">
                         <div class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="Assets/Images/journal-1.png" alt="" class="" />
+                            <img src="/Assets/Images/journal-1.png" alt="" class="" />
                             <span class="flex flex-col cardBtmText">
                                 <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
                                     Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
@@ -433,7 +443,7 @@
                             </span>
                         </div>
                         <div class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="Assets/Images/journal-2.png" alt="" class="" />
+                            <img src="/Assets/Images/journal-2.png" alt="" class="" />
                             <span class="flex flex-col cardBtmText">
                                 <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
                                     Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
@@ -445,7 +455,7 @@
                             </span>
                         </div>
                         <div class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="Assets/Images/journal-3.png" alt="" class="" />
+                            <img src="/Assets/Images/journal-3.png" alt="" class="" />
                             <span class="flex flex-col cardBtmText">
                                 <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
                                     Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
@@ -457,7 +467,7 @@
                             </span>
                         </div>
                         <div class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="Assets/Images/journal-4.png" alt="" class="" />
+                            <img src="/Assets/Images/journal-4.png" alt="" class="" />
                             <span class="flex flex-col cardBtmText">
                                 <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
                                     Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
@@ -469,7 +479,7 @@
                             </span>
                         </div>
                         <div class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="Assets/Images/journal-5.png" alt="" class="" />
+                            <img src="/Assets/Images/journal-5.png" alt="" class="" />
                             <span class="flex flex-col cardBtmText">
                                 <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
                                     Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
@@ -481,7 +491,7 @@
                             </span>
                         </div>
                         <div class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="Assets/Images/journal-6.png" alt="" class="" />
+                            <img src="/Assets/Images/journal-6.png" alt="" class="" />
                             <span class="flex flex-col cardBtmText">
                                 <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
                                     Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
@@ -496,14 +506,14 @@
                     <div
                         class="pagination flex items-center justify-center 2xl:gap-[2.3rem] xl:gap-[2.3rem] lg:gap-[1rem] md:gap-[1rem] sm:gap-[2rem]">
                         <a href="#" class="arrowClass">
-                            <img src="Assets/Images/left-arrow.png" alt="" class="" />
+                            <img src="/Assets/Images/left-arrow.png" alt="" class="" />
                         </a>
                         <a href="#" class="arrowClass active border-none">1</a>
                         <a href="#" class="arrowClass border-none">2</a>
                         <a href="#" class="arrowClass border-none">3</a>
                         <a href="#" class="arrowClass border-none">4</a>
                         <a href="#" class="arrowClass">
-                            <img src="Assets/Images/right-arrow.png" alt="" class="" />
+                            <img src="/Assets/Images/right-arrow.png" alt="" class="" />
                         </a>
                     </div>
                 </div>
@@ -513,7 +523,8 @@
                 <div class="container mx-auto flex justify-center items-center border">
                     <div class="border-div   px-[5rem] py-[5rem] border">
                         <!-- <img src="Assets/Images/frame-border.png" alt="" class=""> -->
-                        <h2 class="max-w-[55rem] text-[4.5rem]  text-[#fff]">New era of design & development starts now</h2>
+                        <h2 class="max-w-[55rem] text-[4.5rem]  text-[#fff]">New era of design & development starts now
+                        </h2>
                     </div>
                 </div>
             </section>

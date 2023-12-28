@@ -45,6 +45,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
 .nav-icon p {
   color: var(--heading-color);
@@ -55,19 +57,22 @@ body {
   font-weight: 700;
   line-height: 150%;
   max-width: 6rem;
-  transition: 0.3s ease;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
 svg path {
   transition: 0.3s ease;
 }
-.nav-icon:hover svg path {
+.nav-icon:hover {
   /* stroke: #fff; */
-  opacity: 0.5;
+  opacity: 1;
+}
+.notification {
+  opacity: 1;
 }
 .nav-icon:hover p {
-  opacity: 0.5;
+  opacity: 1;
 }
-
 .listButton p {
   text-align: center;
   font-family: Inter;
