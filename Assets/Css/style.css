@@ -32,6 +32,69 @@ a,
 button {
   font-family: "Inter", sans-serif !important;
 }
+.sideNav {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+.nav-list {
+  background-color: #1e293b;
+}
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+.nav-icon p {
+  color: var(--heading-color);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  max-width: 6rem;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+svg path {
+  transition: 0.3s ease-in-out;
+}
+.nav-icon:hover {
+  /* stroke: #fff; */
+  opacity: 1;
+}
+.notification {
+  opacity: 1;
+}
+.nav-icon:hover p {
+  opacity: 1;
+}
+
+.listButton p {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--heading-color);
+}
+
+.url-text p {
+  color: var(--paragraph-color);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+
 .paraText {
   text-align: center;
   font-family: Inter;
@@ -72,7 +135,6 @@ button {
 
 .textH {
   font-family: Manrope;
-  font-size: 4.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: 120%;
