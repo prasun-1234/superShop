@@ -215,6 +215,18 @@ label input {
 .invalidPara {
   display: none;
 }
+@media screen and (min-width:1920px)  {
+  .contact-container{
+    max-width: 1920px;
+    margin: auto;
+  }
+  .head{
+    max-width: 1920px;
+    left: auto;
+    /* margin: auto; */
+    /* transform: translate(-43%, 0%); */
+  }
+}
 
 @media only screen and (min-width: 1800px) {
   .right-header {

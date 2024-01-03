@@ -211,6 +211,14 @@ svg path {
   
 
 } */
+@media screen and (min-width: 1920px) {
+  .grid-section,
+  .baner-section,
+  .head {
+    max-width: 1920px;
+    margin: auto;
+  }
+}
 
 @media only screen and (min-width: 480px) and (max-width: 639px) {
   .nav-list {
@@ -226,30 +234,39 @@ svg path {
     gap: 2.5rem;
   }
   .head {
-    padding-top: 0.62rem;
-    padding-bottom: 0.62rem;
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     gap: 2.5rem;
   }
   .head-logo {
-    width: 6rem;
+    width: 8rem;
+    height: 3rem;
   }
   .head-ul-logo {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
   .header-div {
     align-items: center;
   }
+  .header-logo-list {
+    gap: 1rem;
+  }
   .quote-btn {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .quote {
     font-size: 0.7rem;
     max-width: 4rem;
   }
+
+
+  
   .banner-main {
     padding-left: 1.25rem;
     padding-right: 1.25rem;

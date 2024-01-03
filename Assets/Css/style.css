@@ -19,6 +19,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
   box-sizing: border-box;
 }
 
@@ -277,7 +278,13 @@ svg path {
   background-clip: content-box;
   /* background-size: cover; */
 }
-
+/* .container-fluid{
+  background: url(
+    '/Assets/Images/landing-bg.png'
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .cardHead {
   font-family: Inter;
@@ -399,4 +406,195 @@ svg path {
 
 .hideBox{
   display: none;
+}
+
+
+@media screen and (min-width:1922px) {
+  .container-fluid, .head, .shopify{
+    max-width: 1920px;
+    margin: auto;
+  }
+  .backImg{
+    padding-right: 3.75rem;
+  }
+  
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  .nav-list {
+    justify-content: space-around;
+  }
+  .notification {
+    top: -24px;
+    left: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  header {
+    gap: 2.5rem;
+  }
+  .head {
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .head-logo {
+    width: 8rem;
+    height: 3rem;
+  }
+  .head-ul-logo {
+    width: 3rem;
+    height: 3rem;
+  }
+  .header-div {
+    align-items: center;
+  }
+  .header-logo-list {
+    gap: 1rem;
+  }
+  .quote-btn {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .quote {
+    font-size: 0.7rem;
+    max-width: 4rem;
+  }
+  
+  /* SECTION START HERE */
+  .backImg{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    row-gap: 2.5rem;
+  }
+  
+  .cardBody{
+    gap: 1rem;
+  }
+  .shopifyBg{
+    width: 30.8rem;    
+    height: 35rem;
+    right: 8.8rem;
+    top: -8.6rem;
+  }
+  .shopify .shopify-main-div .shopify-head h3{
+    font-size: 2rem;
+  }
+  
+  .shopify{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  
+}
+
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .nav-list {
+    justify-content: space-around;
+  }
+  .notification {
+    top: -24px;
+    left: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  header {
+    gap: 2.5rem;
+  }
+  .head {
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .head-logo {
+    width: 6rem;
+  }
+  .head-ul-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-div {
+    align-items: center;
+  }
+  .header-logo-list {
+    gap: 10px;
+  }
+  .quote-btn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .quote {
+    font-size: 0.7rem;
+    max-width: 3rem;
+  }
+
+  /* SECTION START HERE */
+
+  
+}
+
+@media screen and (min-width: 275px) and (max-width: 374px) {
+  .nav-list {
+    justify-content: space-around;
+  }
+  .notification {
+    top: -24px;
+    left: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  header {
+    gap: 2.5rem;
+  }
+  .head {
+    padding-top: 1.62rem;
+    padding-bottom: 1.62rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2.5rem;
+  }
+  .head-logo {
+    width: 6rem;
+  }
+  .head-ul-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-div {
+    align-items: center;
+  }
+  .header-logo-list {
+    gap: 10px;
+  }
+
+  .quote-btn {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .quote {
+    font-size: 0.7rem;
+    max-width: 3rem;
+  }
+
+  /* SECTION START HERE */
+
+  .shopifyBg{
+    right: 19.8rem;
+    top: -12.6rem;
+    height: 50rem;
+    width: 17.8rem;
+  }
+  .trust-text{
+    font-size: 0.875rem;
+  }
 }
