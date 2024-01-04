@@ -147,29 +147,16 @@ label input {
 
 label textarea {
   color: var(--paragraph-color);
-  border: 3px solid transparent;
   outline: none;
-}
-.bgColor {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) -59%,
-    rgba(2, 6, 23, 1) 100%
-  );
 }
 
 .myInput {
   background-color: #1e293b;
   outline: none;
-  border: 1px solid transparent;
+  /* border: 1px solid ; */
 }
 .myInput:focus {
-  border-image: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) -59%,
-    rgba(2, 6, 23, 1) 100%
-  );
-  border-image-slice: 1;
+  border: 2px solid #464EFF;
 }
 
 .custom-select {
@@ -180,6 +167,16 @@ label textarea {
   width: 100%;
   height: 3rem; 
   cursor: pointer;
+}
+.custom-select::after{
+  content: url('/Assets/Images/down-arrow.png');
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  pointer-events: none;
 }
 .custom-arrow {
   position: absolute;
@@ -301,16 +298,13 @@ label textarea {
     margin-bottom: 1.25rem;
   }
   .inputDiv {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    margin-top: 5rem;
     padding-bottom: 3rem;
   }
   .formGroup {
     gap: 1.25rem;
   }
-  .inputDiv{
-    padding-top: 10rem;
-  }
+  
 }
 
 @media screen and (min-width: 375px) and (max-width: 479px) {
@@ -366,12 +360,10 @@ label textarea {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 3rem;
+    padding-top: 4rem;
   }
   .formGroup {
     gap: 1.25rem;
-  }
-  .inputDiv{
-    padding-top: 10rem;
   }
 }
 
@@ -429,11 +421,10 @@ label textarea {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 3rem;
+    padding-top: 4rem;
   }
   .formGroup {
     gap: 1.25rem;
   }
-  .inputDiv{
-    padding-top: 10rem;
-  }
+  
 }
