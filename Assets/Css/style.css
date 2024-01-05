@@ -193,7 +193,7 @@ svg path {
 }
 
 .yMarquee {
-  animation: slide-y 25s linear infinite;
+  /* animation: slide-y 25s linear infinite; */
 }
 @keyframes slide-y {
   0% {
@@ -259,6 +259,8 @@ svg path {
   background-color: #78a445;
 }
 
+/* card section  */
+
 .task-card {
   position: relative;
   background: radial-gradient(
@@ -267,12 +269,12 @@ svg path {
     rgba(2, 6, 23, 1) 100%
   );
 }
-
 .task-card-inner {
   background: #020617;
   padding: 12px;
+  transition: 0.3s ease-in-out;
 }
-.task-card-inner:hover {
+.grid-card:hover .task-card-inner {
   background: #0f172a;
 }
 
@@ -285,6 +287,26 @@ svg path {
   );
   padding: 1px;
 }
+.cart-tag {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(105%);
+}
+.grid-card {
+  transition: 0.3s ease-in-out;
+}
+.grid-card:hover .cart-tag {
+  transform: translateY(0);
+}
+.grid-card:hover .customDiv {
+  opacity: 0;
+}
+.cart-tag .cart-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
 
 .shopifyBg {
   background-image: url("./Assets/Images/bgGradient.png");
@@ -293,13 +315,6 @@ svg path {
   background-clip: content-box;
   /* background-size: cover; */
 }
-/* .container-fluid{
-  background: url(
-    '/Assets/Images/landing-bg.png'
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .cardHead {
   font-family: Inter;
@@ -310,14 +325,12 @@ svg path {
 }
 .cardParaHead h5 {
   font-family: Inter;
-  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 160%;
 }
 .cardParaHead p {
   font-family: Inter;
-  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
@@ -336,6 +349,20 @@ svg path {
   border-image-slice: 1;
   transition: background-image 1s ease, box-shadow 0.5s ease;
   border-radius: 1.25rem;
+}
+
+.order-discuss-section .discuss-main .discuss-head h3 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.order-discuss-section .discuss-main .discuss-head p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: center;
 }
 
 .card-1 {
@@ -381,7 +408,18 @@ svg path {
 .paralxBg {
   background: url("/Assets/Images/paralx-bg.png");
 }
-
+.parallax-head {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.parallax-para {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
 .cusFuture {
   background: linear-gradient(90deg, #6dffc1 59.9%, #bd9eff 99.94%);
   background-clip: text;
@@ -393,12 +431,25 @@ svg path {
   border: 2px solid transparent;
   border-image: radial-gradient(
     circle,
-    rgba(144, 144, 144, 1) 91%,
-    rgba(2, 6, 23, 1) 100%
+    rgba(144, 144, 144, 1) 51%,
+    rgba(2, 6, 23, 1) 99%
   );
   border-image-slice: 1;
   border-radius: 1.25rem;
 }
+.main-future-web .bgImg .future-web-content-box .future-web-head h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.main-future-web .bgImg .future-web-content-box .future-web-head p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
 .spanHover {
   transition: all 0.3s ease;
 }
@@ -428,13 +479,73 @@ svg path {
   .marquee-section,
   .grid-card-section,
   .order-discuss-section,
-  .parallax-section {
+  .parallax-section,
+  .future-web-section {
     max-width: 1920px;
     margin: auto;
     margin-bottom: 5rem;
   }
   .backImg {
     padding-right: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  .topTop {
+    width: 20rem;
+  }
+  .topLeft {
+    width: 20rem;
+  }
+  .topRight {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .bottomLeft {
+    width: 30rem;
+  }
+  .bottomRight {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .bottomLeft {
+    width: 25rem;
+  }
+  .bottomRight {
+    width: 25rem;
+  }
+  .topTop {
+    width: 15rem;
+    height: 10rem;
+
+  }
+  .topLeft {
+    width: 15rem;
+  }
+  .topRight {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .bottomLeft {
+    width: 20rem;
+  }
+  .bottomRight {
+    width: 20rem;
+  }
+  .topTop {
+    width: 13rem;
+    height: 8rem;
+  }
+  .topLeft {
+    width: 13rem;
+  }
+  .topRight {
+    width: 13rem;
   }
 }
 
@@ -507,6 +618,80 @@ svg path {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+  .firstBox {
+    gap: 1rem;
+  }
+  .backImg {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    row-gap: 2.5rem;
+  }
+  .trust-text {
+    font-size: 16px;
+  }
+  .shopifyBg {
+    right: 19.8rem;
+    top: -12.6rem;
+    height: 50rem;
+    width: 17.8rem;
+  }
+  .merchant-border {
+    padding-left: 0.44rem;
+    padding-right: 0.44rem;
+  }
+  .custom-trust-text {
+    font-size: 16px;
+  }
+  .textH {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .cardBody {
+    gap: 1rem;
+  }
+  .container-fluid,
+  .marquee-section {
+    margin-bottom: 40px;
+  }
+
+  .main-card h3 {
+    font-size: 2rem;
+    max-width: 19rem;
+  }
+  .main-card {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .task-card-inner {
+    padding: 1.25rem 0.625rem;
+    gap: 1rem;
+  }
+  .left-para {
+    font-size: 0.875rem;
+  }
+  .card-badges {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .time-text {
+    font-size: 0.875rem;
+    line-height: 180%;
+  }
+  .price-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .yMarquee {
+    row-gap: 2.5rem;
+  }
+
+  .discuss-main .discuss-head h3 {
+    max-width: 16rem;
+  }
+  .discuss-main .discuss-head p {
+    max-width: 25rem;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 479px) {
@@ -554,6 +739,73 @@ svg path {
   }
 
   /* SECTION START HERE */
+  .firstBox {
+    gap: 1rem;
+  }
+  .backImg {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    row-gap: 2.5rem;
+  }
+  .trust-text {
+    font-size: 12px;
+  }
+  .shopifyBg {
+    right: 19.8rem;
+    top: -12.6rem;
+    height: 50rem;
+    width: 17.8rem;
+  }
+  .merchant-border {
+    padding-left: 0.44rem;
+    padding-right: 0.44rem;
+  }
+  .custom-trust-text {
+    font-size: 13px;
+  }
+  .textH {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .cardBody {
+    gap: 1rem;
+  }
+  .container-fluid,
+  .marquee-section {
+    margin-bottom: 40px;
+  }
+
+  .main-card h3 {
+    font-size: 2rem;
+    max-width: 19rem;
+  }
+  .main-card {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .task-card-inner {
+    padding: 1.25rem 0.625rem;
+    gap: 1rem;
+  }
+  .left-para {
+    font-size: 0.875rem;
+  }
+  .card-badges {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .time-text {
+    font-size: 0.875rem;
+    line-height: 180%;
+  }
+  .price-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .yMarquee {
+    row-gap: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 275px) and (max-width: 374px) {
@@ -655,16 +907,16 @@ svg path {
     font-size: 0.875rem;
     font-weight: 600;
   }
-  .time-text{
+  .time-text {
     font-size: 0.875rem;
     line-height: 180%;
   }
-  .price-text{
+  .price-text {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 150%;
   }
-  .yMarquee{
+  .yMarquee {
     row-gap: 2.5rem;
   }
 }

@@ -201,8 +201,7 @@
         <main class="h-auto w-full relative">
             <!-- <--------------------------------- HEADER ---------------------------->
 
-            <header
-                class="head flex flex-col lg:py-9 py-[1.62rem] px-6 xl:px-[3.75rem] lg:px-8 md:px-6 md:py-7 xl:gap-10 md:gap-6 sm:gap-5">
+            <header class="head flex flex-col lg:py-9 py-[1.62rem] px-6 xl:px-[3.75rem] lg:px-8 md:px-6 md:py-7 xl:gap-10 md:gap-6 sm:gap-5">
                 <div class="header-div flex justify-between sm:items-start w-full">
                     <a href="#" class="flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="head-logo sm:max-w-[8rem]" width="192"
@@ -385,8 +384,7 @@
                     <div class="col-span-12 xl:col-span-6 gap-5 z-50 flex justify-start">
                         <div class="firstBox flex flex-col justify-center">
                             <div class="text-white">
-                                <a href="#"
-                                    class="merchant-border flex items-start text-white sm:mb-8 px-[1.12rem] py-[0.31rem] gap-[0.44rem] border rounded-full border-dashed sm:max-w-[26rem]">
+                                <a href="#" class="merchant-border flex items-center justify-start text-white sm:mb-8 px-[1.12rem] py-[0.31rem] gap-[0.44rem] border rounded-full border-dashed sm:max-w-[30rem]">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
                                         fill="none">
                                         <path d="M15.8888 6.50004H16.9722V7.58337H15.8888V6.50004Z" fill="white" />
@@ -448,7 +446,7 @@
                             class="-z-10 absolute flex sm:w-[32.8rem] sm:h-[65rem] rotate-[67.598deg] blur-[7.3rem] -top-[14.6rem] right-[20.8rem] bg-[#143092] rounded-[65rem] shrink-0 shopifyBg">
                         </span>
                         <div class="secondBox z-50 imgBox flex justify-end w-full">
-                            <img src="./Assets/Images/image 2.png" alt=" " class="rounded-lg " />
+                            <img src="./Assets/Images/image 2.png" alt=" " class="rounded-lg sm:w-full xl:w-auto" />
                         </div>
                     </div>
                 </div>
@@ -456,7 +454,7 @@
 
             <!-- <--------------------------------- MARQUEC SECTION -------------------------->
 
-            <section class="sm:mt-24 marquee-section">
+            <!-- <section class="sm:mt-24 marquee-section">
                 <div class="flex flex-col items-center w-auto relative -z-10 gap-6 overflow-hidden">
                     <div class="marqueeBox flex items-center gap-[7.5rem]">
                         <a href="#" class="grow">
@@ -658,11 +656,11 @@
                         </a>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- <------------------------------------CARD SECTION ---------------------------->
 
-            <section class="sm:mt-20 relative gap-4 mb-24 grid-card-section">
+            <!-- <section class="sm:mt-20 relative gap-4 mb-24 grid-card-section">
                 <div
                     class="main-card flex flex-col gap-4 items-center justify-center  2xl:px-[3.75rem] xl:px-8 sm:px-8">
                     <h3 class="text-[3rem] text-[#fff] max-w-[44rem] mb-[.5rem]">
@@ -672,8 +670,7 @@
                     <div class="h-auto relative overflow-hidden w-full">
                         <span class="absolute top-0 left-0 w-full h-[18rem] shedBg z-10"></span>
                         <div class="main-grid-box grid grid-cols-12 2xl:gap-x-[2.5rem] 2xl:gap-y-[2.62rem] xl:gap-x-[1rem] xl:gap-y-[1.6rem] sm:gap-y-[2rem] h-auto relative yMarquee">
-
-                            <div class=" grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto">
+                            <div class="relative grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto overflow-hidden">
                                 <div class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
                                     <h5 class=" card-header text-[1.5rem] text-[#fff] ">
                                         Newsletter Modal
@@ -710,12 +707,13 @@
                                         <p class="text-2xl font-semibold leading-[3rem]">$24</p>
                                     </div>
                                 </div>
+                                <a href="#" class="cart-tag absolute  bottom-[2px]   justify-center text-[1rem] w-full rounded-b-[1.25rem] py-[1.62rem] px-[5rem] bg-[#EA580C]">
+                                    <p class="cart-text">ADD TO CART </p>
+                                </a>
                             </div>
 
-                            <div
-                                class=" grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto">
-                                <div
-                                    class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
+                            <div class="relative grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto overflow-hidden">
+                                <div class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
                                     <h5 class=" card-header text-[1.5rem] text-[#fff] ">
                                         Newsletter Modal
                                     </h5>
@@ -751,12 +749,13 @@
                                         <p class="text-2xl font-semibold leading-[3rem]">$24</p>
                                     </div>
                                 </div>
+                                <a href="#" class="cart-tag absolute  bottom-[2px]  justify-center text-[1rem] w-full rounded-b-[1.25rem] py-[1.62rem] px-[5rem] bg-[#EA580C]">
+                                    <p class="cart-text">ADD TO CART </p>
+                                </a>
                             </div>
 
-                            <div
-                                class=" grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto">
-                                <div
-                                    class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
+                            <div class="relative grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto overflow-hidden">
+                                <div class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
                                     <h5 class=" card-header text-[1.5rem] text-[#fff] ">
                                         Newsletter Modal
                                     </h5>
@@ -792,12 +791,13 @@
                                         <p class="text-2xl font-semibold leading-[3rem]">$24</p>
                                     </div>
                                 </div>
+                                <a href="#" class="cart-tag absolute  bottom-[2px]   justify-center text-[1rem] w-full rounded-b-[1.25rem] py-[1.62rem] px-[5rem] bg-[#EA580C]">
+                                    <p class="cart-text">ADD TO CART </p>
+                                </a>
                             </div>
 
-                            <div
-                                class=" grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto">
-                                <div
-                                    class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
+                            <div class="relative grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto overflow-hidden">
+                                <div class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
                                     <h5 class=" card-header text-[1.5rem] text-[#fff] ">
                                         Newsletter Modal
                                     </h5>
@@ -833,12 +833,13 @@
                                         <p class="text-2xl font-semibold leading-[3rem]">$24</p>
                                     </div>
                                 </div>
+                                <a href="#" class="cart-tag absolute  bottom-[2px]   justify-center text-[1rem] w-full rounded-b-[1.25rem] py-[1.62rem] px-[5rem] bg-[#EA580C]">
+                                    <p class="cart-text">ADD TO CART </p>
+                                </a>
                             </div>
 
-                            <div
-                                class=" grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto">
-                                <div
-                                    class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
+                            <div class="relative grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto overflow-hidden">
+                                <div class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
                                     <h5 class=" card-header text-[1.5rem] text-[#fff] ">
                                         Newsletter Modal
                                     </h5>
@@ -874,12 +875,13 @@
                                         <p class="text-2xl font-semibold leading-[3rem]">$24</p>
                                     </div>
                                 </div>
+                                <a href="#" class="cart-tag absolute  bottom-[2px]   justify-center text-[1rem] w-full rounded-b-[1.25rem] py-[1.62rem] px-[5rem] bg-[#EA580C]">
+                                    <p class="cart-text">ADD TO CART </p>
+                                </a>
                             </div>
 
-                            <div
-                                class=" grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto">
-                                <div
-                                    class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
+                            <div class="relative grid-card xl:col-span-4 col-span-12 lg: p-[1px] rounded-[20px] backGround task-card h-auto overflow-hidden">
+                                <div class=" w-full flex flex-col justify-start rounded-[20px] sm:px-9 sm:py-[1.3rem] task-card-inner gap-6">
                                     <h5 class=" card-header text-[1.5rem] text-[#fff] ">
                                         Newsletter Modal
                                     </h5>
@@ -887,11 +889,11 @@
                                         <div class="left-contents flex  flex-col gap-6">
                                             <div class="flex justify-start gap-[0.94rem]">
                                                 <span
-                                                    class="card-badges inline-flex items-center rounded-[0.25rem] bg-[#FB923C] px-[.375rem] py-1 sm:text-xs font-semibold text-white ">
+                                                    class="inline-flex items-center rounded-[0.25rem] bg-[#FB923C] px-[.375rem] py-1 text-xs font-semibold text-white ">
                                                     Development
                                                 </span>
                                                 <span
-                                                    class="card-badges inline-flex items-center rounded-[0.25rem] bg-[#BBF7D0] px-[.375rem] py-1 sm:text-xs font-semibold text-[#0E7490]">
+                                                    class="inline-flex items-center rounded-[0.25rem] bg-[#BBF7D0] px-[.375rem] py-1 text-xs font-semibold text-[#0E7490]">
                                                     Design
                                                 </span>
                                             </div>
@@ -910,12 +912,16 @@
                                         </a>
                                     </div>
                                     <div class=" customDiv"></div>
-                                    <div class="flex justify-between items-center text-center">
-                                        <p class="time-text sm:text-2xl font-normal leading-8">48hrs</p>
-                                        <p class="price-text sm:text-2xl font-semibold leading-[3rem]">$24</p>
+                                    <div class="flex justify-between items-center">
+                                        <p class="text-2xl font-normal leading-8">48hrs</p>
+                                        <p class="text-2xl font-semibold leading-[3rem]">$24</p>
                                     </div>
                                 </div>
+                                <a href="#" class="cart-tag absolute bottom-[2px]  justify-center text-[1rem] w-full rounded-b-[1.25rem] py-[1.62rem] px-[5rem] bg-[#EA580C]">
+                                    <p class="cart-text">ADD TO CART </p>
+                                </a>
                             </div>
+                            
                         </div>
                         <span class="absolute bottom-0 left-0 w-full h-[18rem] shedBg-1 z-10"></span>
                     </div>
@@ -930,7 +936,7 @@
                 </div>
 
 
-            </section>
+            </section> -->
 
             <!-- <------------------------------------- SHOPIFY SECTION ----------------------------->
             <!-- <section class="mb-[6.25rem] shopify">
@@ -1197,32 +1203,29 @@
             <!-- <---------------------------------- ORDER DISCUSS SECTION --------------------------------->
 
             <!-- <section class="mb-20 order-discuss-section">
-                <div class="mx-8 flex flex-col justify-center">
-                    <div class="mb-10 flex justify-center flex-col">
-                        <h3
-                            class="flex justify-center text-5xl leading-[3.6rem] not-italic font-extrabold mb-4 text-[#fff]">
+                <div class="discuss-main 2xl:px-[3.75rem] sm:px-8 px-[1.25rem] flex flex-col justify-center sm:gap-10 gap-6">
+                    <div class="discuss-head gap-4  flex justify-center items-center flex-col">
+                        <h3 class="flex justify-center items-center text-center sm:text-[3rem] text-[2rem] text-[#fff]">
                             Order. Discuss. Deliver.
                         </h3>
-                        <p
-                            class="text-center flex justify-center text-[#CBD5E1] text-base not-italic font-normal leading-7">
+                        <p class="flex justify-center flex-col sm:text-[1rem] max-w-[42rem] text-center text-[#CBD5E1] ">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt
-                            <br />
+                            
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-12 gap-10">
-                        <div
-                            class="lg:col-span-4 col-span-12 py-12 px-16 flex justify-center items-center rounded-[1.25rem] relative card-1">
-                            <div class="flex flex-col items-start gap-[8.75rem]">
-                                <div class="flex flex-col gap-20">
+                    <div class="grid grid-cols-12 xl:gap-x-10 gap-y-[1.5rem]">
+                        <div class=" xl:col-span-4 col-span-12 sm:py-12 py-8 2xl:px-16 xl:px-[2rem] px-[2.65rem] flex justify-center items-center rounded-[1.25rem] relative cards card-1">
+                            <div class="main-cards flex flex-col items-start gap-[3.75rem] sm:gap-[8.75rem]">
+                                <div class="cards-upper flex flex-col gap-[3.3rem] sm:gap-20">
                                     <h5 class="cardHead">01.</h5>
                                     <img src="Assets/Images/checkout.png" alt="" class="" />
                                 </div>
-                                <div class="flex items-start flex-col cardParaHead">
-                                    <h5 class="">Place an order</h5>
-                                    <p>
+                                <div class="cards-lower flex items-start flex-col cardParaHead">
+                                    <h5 class="text-[1.25rem] sm:text-[1.5rem]">Place an order</h5>
+                                    <p class="sm:text-[1rem] text-[0.875rem]">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt u
                                     </p>
@@ -1230,16 +1233,15 @@
                             </div>
                         </div>
 
-                        <div
-                            class="lg:col-span-4 col-span-12 py-12 px-16 flex justify-center items-center rounded-[1.25rem] card-2">
-                            <div class="flex flex-col items-start gap-[5.62rem]">
-                                <div class="flex flex-col gap-12">
+                        <div class="xl:col-span-4 col-span-12 sm:py-12 py-8 2xl:px-16 xl:px-[2rem] px-[2.65rem] flex justify-center items-center rounded-[1.25rem] cards card-2">
+                            <div class="main-cards  flex flex-col items-start gap-[3.75rem] sm:gap-[5.62rem]">
+                                <div class="cards-upper flex flex-col gap-[3.3rem] sm:gap-12">
                                     <h5 class="cardHead">02.</h5>
                                     <img src="Assets/Images/discussion.png" alt="" class="" />
                                 </div>
-                                <div class="flex items-start flex-col cardParaHead">
-                                    <h5 class="">Discuss with our Specialized team</h5>
-                                    <p>
+                                <div class="cards-lower flex items-start flex-col cardParaHead">
+                                    <h5 class=" text-[1.25rem] sm:text-[1.5rem]">Discuss with our Specialized team</h5>
+                                    <p class="sm:text-[1rem] text-[0.875rem]">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt u
                                     </p>
@@ -1247,16 +1249,15 @@
                             </div>
                         </div>
 
-                        <div
-                            class="lg:col-span-4 col-span-12 py-12 px-16 flex justify-center items-center rounded-[1.25rem] card-3">
-                            <div class="flex flex-col items-start gap-[7.5rem]">
-                                <div class="flex flex-col gap-12">
+                        <div class="xl:col-span-4 col-span-12 sm:py-12 py-8 2xl:px-16 xl:px-[2rem] px-[2.65rem] flex justify-center items-center rounded-[1.25rem] cards card-3">
+                            <div class="main-cards  flex flex-col items-start gap-[3.75rem] sm:gap-[7.5rem]">
+                                <div class="cards-upper flex flex-col gap-[3.3rem] sm:gap-12">
                                     <h5 class="cardHead">03.</h5>
                                     <img src="Assets/Images/mobile-net.png" alt="" class="" />
                                 </div>
-                                <div class="flex items-start flex-col cardParaHead">
-                                    <h5 class="">Suprshop team delivers</h5>
-                                    <p>
+                                <div class="cards-lower flex items-start flex-col cardParaHead">
+                                    <h5 class=" text-[1.25rem] sm:text-[1.5rem]">Suprshop team delivers</h5>
+                                    <p class="sm:text-[1rem] text-[0.875rem]">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt u
                                     </p>
@@ -1269,79 +1270,76 @@
 
             <!-- <--------------------------------------- PARALLE EFFECT / PARALAXE SECTION --------------------------------------------->
 
-            <!-- <section class="mb-20 parallax-section">
-                <div
-                    class="grid grid-cols-2 gap-28 paralxBg bg-no-repeat bg-cover bg-fixed px-32 py-20 mx-8 rounded-[1.2rem]">
-                    <div class="flex items-center justify-around flex-col">
-                        <div class="gap-10 flex flex-col">
-                            <div class="flex items-start flex-col gap-6">
-                                <h2 class="text-[4.5rem] not-italic font-extrabold leading-[5.4rem]">
-                                    Launching your web presence is like a hot air balloon ride
-                                </h2>
-                                <p class="text-[#fff] text-base not-italic font-normal leading-8 max-w-lg">
-                                    let our web development service be the wind beneath your
-                                    digital dreams, soaring to new heights of online success.
-                                </p>
-                            </div>
-                            <div class="flex justify-start">
-                                <a href="#"
-                                    class="flex items-center justify-center rounded-full bg-orange-600 max-w-[15rem] py-[0.75rem] px-[1.88rem]">
+            <!-- <section class="mb-20 parallax-section hidden md:flex">
+                <div class="main-parallax 2xl:px-[3.75rem] sm:px-8 w-full flex justify-center items-center">
+                    <div class="paralxBg flex  justify-between  w-full  bg-no-repeat bg-cover bg-fixed   2xl:px-32 xl:px-20 md:px-12  2xl:py-20 lg:py-12  md:py-8  2xl:gap-28 xl:gap-20 md:gap-12 rounded-[1.2rem] ">
+                        <div class=" flex items-center justify-around flex-col">
+                            <div class="2xl:gap-10 md:gap-6 flex flex-col">
+                                <div class="flex items-start flex-col 2xl:gap-6 md:gap-2">
+                                    <h2 class="parallax-head lg:text-[3.5rem] md:text-[2rem] 2xl:text-[4.5rem]  max-w-[44rem] ">
+                                        Launching your web presence is like a hot air balloon ride
+                                    </h2>
+                                    <p class="parallax-para text-[#fff]  max-w-[31.2rem]">
+                                        let our web development service be the wind beneath your
+                                        digital dreams, soaring to new heights of online success.
+                                    </p>
+                                </div>
+                                <a href="#" class="flex items-center justify-start rounded-full bg-orange-600 max-w-[15rem] py-[0.75rem] px-[1.88rem]">
                                     <p class="text-base not-italic font-bold leading-6">
                                         VIEW SHOPIFY TASKS
                                     </p>
                                 </a>
+                                
                             </div>
                         </div>
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <img src="Assets/Images/paralx-bg-ballon.png" alt="" />
+                        <div class="flex justify-center items-center">
+                            <img src="Assets/Images/paralx-bg-ballon.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </section> -->
 
             <!-- <-------------------------------------------- FRAME- 11572 SECTION ------------------------------------------->
 
-            <!-- <section class="mb-20">
-                <div class="mx-8">
-                    <div class="flex justify-center items-center relative h-[55rem] rounded-3xl bgImg">
-                        <div
-                            class="max-w-[46rem] flex flex-col justify-center items-center gap-10 h-auto z-10 text-center">
-                            <div class="flex flex-col gap-6">
-                                <h2 class="text-7xl not-italic font-extrabold leading-[5.4rem]">
+            <section class="mb-20 future-web-section">
+                <div class="main-future-web  2xl:px-[3.75rem] sm:px-8">
+                    <div class="bgImg flex justify-center items-center relative md:h-[100vh] rounded-3xl ">
+                        <div class="future-web-content-box  max-w-[46rem] flex flex-col justify-center items-center gap-10 h-auto z-10 text-center sm:p-[2.1rem]">
+                            <div class="future-web-head flex flex-col gap-6 ">
+                                <h2 class=" xl:text-[4.5rem] md:text-[3.5rem] text-[2.5rem] xl:max-w-[44rem]">
                                     Building the <span class="cusFuture">future</span> of web
                                     design
                                 </h2>
-                                <p class="not-italic font-normal text-base leading-7 text-[#CBD5E1]">
+                                <p class="xl:text-[1rem] text-[#CBD5E1]">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                     do eiusmod tempor incididunt ut labore et dolore magna
                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
                             </div>
-                            <a href="#"
-                                class="flex items-center justify-center rounded-full bg-orange-600 max-w-[15rem] py-[0.75rem] px-[1.88rem]">
+                            <a href="#" class="flex items-center justify-center rounded-full bg-orange-600 xl:max-w-[15rem] py-[0.75rem] px-[1.88rem]">
                                 <p class="text-base not-italic font-bold leading-6">
                                     GET A QUOTE
                                 </p>
                             </a>
                         </div>
-                        <span class="absolute top-0 w-full h-auto flex justify-between">
+                        <span class="absolute top-0 w-full h-auto  justify-between hidden md:flex">
                             <img src="Assets/Images/decorative-office.png" alt=""
-                                class="mt-10 brightness-50 opacity-50 spanHover" />
+                                class="mt-10 brightness-50 opacity-50 spanHover topLeft  " />
                             <img src="Assets/Images/section-cart.png" alt=""
-                                class="h-[15.3rem] brightness-50 opacity-50 spanHover" />
+                                class="h-[15.3rem] brightness-50 opacity-50 spanHover topTop  " />
                             <img src="Assets/Images/women-short.png" alt=""
-                                class="mt-14 brightness-50 opacity-50 spanHover" />
+                                class="mt-14 brightness-50 opacity-50 spanHover topRight  " />
                         </span>
-                        <span class="absolute bottom-0 w-full h-auto flex justify-between">
+                        <span class="absolute bottom-0 w-full h-auto  justify-between hidden md:flex">
                             <img src="Assets/Images/protrait-face.png" alt=""
-                                class="mb-8 brightness-50 opacity-50 spanHover" />
+                                class="mb-8 brightness-50 opacity-50 spanHover bottomLeft " />
                             <img src="Assets/Images/cycle-shop.png" alt=""
-                                class="mb-16 brightness-50 opacity-50 spanHover" />
+                                class="mb-16 brightness-50 opacity-50 spanHover bottomRight " />
                         </span>
                     </div>
                 </div>
-            </section> -->
+            </section>
         </main>
     </div>
 
