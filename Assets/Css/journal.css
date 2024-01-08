@@ -108,7 +108,7 @@ svg path {
 }
 
 .banner {
-  background: url("/Assets/Images/journal-bg-full.png");
+  background: url("/assets/images/journal-bg-full.png");
   background-repeat: round;
   background-size: cover;
   border-radius: 1.25rem;

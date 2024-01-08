@@ -193,7 +193,7 @@ svg path {
 }
 
 .yMarquee {
-  /* animation: slide-y 25s linear infinite; */
+  animation: slide-y 25s linear infinite;
 }
 @keyframes slide-y {
   0% {
@@ -420,6 +420,9 @@ svg path {
   font-weight: 400;
   line-height: 180%;
 }
+
+/* future-web-section */
+
 .cusFuture {
   background: linear-gradient(90deg, #6dffc1 59.9%, #bd9eff 99.94%);
   background-clip: text;
@@ -472,6 +475,21 @@ svg path {
   display: none;
 }
 
+/* photo marquee section */
+
+.main-photo-marquee .content-btn-box h3 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.main-photo-marquee .content-btn-box button p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
 @media screen and (min-width: 1922px) {
   .container-fluid,
   .head,
@@ -520,7 +538,6 @@ svg path {
   .topTop {
     width: 15rem;
     height: 10rem;
-
   }
   .topLeft {
     width: 15rem;
@@ -530,7 +547,7 @@ svg path {
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .bottomLeft {
     width: 20rem;
   }
@@ -692,6 +709,19 @@ svg path {
   .discuss-main .discuss-head p {
     max-width: 25rem;
   }
+
+  .bgImg {
+    padding-left: 2.12rem;
+    padding-right: 2.12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .future-web-head h2 {
+    max-width: 22.5rem;
+  }
+  .future-web-head p {
+    max-width: 26.4rem;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 479px) {
@@ -806,6 +836,19 @@ svg path {
   .yMarquee {
     row-gap: 2.5rem;
   }
+
+  .bgImg {
+    padding-left: 2.12rem;
+    padding-right: 2.12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .future-web-head h2 {
+    max-width: 22.5rem;
+  }
+  .future-web-head p {
+    max-width: 26.4rem;
+  }
 }
 
 @media screen and (min-width: 275px) and (max-width: 374px) {
@@ -918,5 +961,18 @@ svg path {
   }
   .yMarquee {
     row-gap: 2.5rem;
+  }
+
+  .bgImg {
+    padding-left: 2.12rem;
+    padding-right: 2.12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .future-web-head h2 {
+    max-width: 22.5rem;
+  }
+  .future-web-head p {
+    max-width: 26.4rem;
   }
 }

@@ -97,7 +97,7 @@ svg path {
 /* baner section */
 
 .backgrond-hover {
-  background: url("/Assets/Images/baner-hover.png");
+  background: url("/assets/images/baner-hover.png");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;

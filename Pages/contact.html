@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="/Assets/Css/contactStyle.css">
+    <link rel="stylesheet" href="/assets/css/contact-style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto 2xl:gap-12 xl:gap-0 lg:gap-0  border-red-600">
+    <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto gap-0  border-red-600">
         <aside class="bg-slate-800 lg:max-w-[7rem] lg:relative fixed bottom-0 left-0 w-full z-[100]">
             <nav
                 class="sideNav w-full h-auto lg:h-[100dvh] duration-150 ease-in-out sticky top-0 left-0 z-[899]   lg:pr-[1px] lg:pt-0 pt-[1px]">
@@ -208,8 +208,7 @@
         </aside>
 
         <main class="h-auto w-full relative">
-            <header
-                class="head flex flex-col lg:py-9 py-[1.62rem] 2xl:px-8 px-6 md:py-7  xl:gap-10 md:gap-6 sm:gap-5   z-50   bg-inherit   absolute  right-0 w-full h-auto">
+            <header class="head flex flex-col lg:py-9 py-[1.62rem] 2xl:px-[3.75rem] px-5 md:py-7  xl:gap-10 md:gap-6 sm:gap-5   z-50   bg-inherit   absolute  right-0 w-full h-auto">
                 <div class="header-div flex justify-between sm:items-start w-full ">
                     <a href="#" class="flex justify-center items-center ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="head-logo sm:max-w-[8rem]" width="192"
@@ -397,10 +396,14 @@
             </header>
 
 
-            <section
-                class="contact-container grid xl:grid-cols-12 2xl:gap-28 xl:gap-8 md:gap-12 sm:gap-10 items-center mb-32 relative ">
+            <section class="contact-container grid xl:grid-cols-12 2xl:gap-28 xl:gap-8 md:gap-12 sm:gap-10 items-center mb-32 relative xl:max-h-screen h-auto overflow-hidden">
+              
+                <div class="imgDiv h-full xl:col-span-7 col-span-12 xl:row-auto row-start-2">
+                    <img src="/assets/images/contact-us-banner.png" alt=" "
+                        class="w-full h-full object-cover xl:min-h-[75rem]">
+                </div>
 
-                <div class="inputDiv 2xl:pl-8 lg:px-[1.25rem] px-5  xl:col-span-5 col-span-12 sm:pt-32 xl:pt-12 xl:pb-48 ">
+                <div class="inputDiv 2xl:pr-[3.75rem] lg:pr-[1.25rem] px-5   xl:col-span-5 col-span-12 sm:pt-32 xl:pt-12 xl:pb-48  xl:row-auto row-start-1">
 
 
                     <div class="flex flex-col items-start  sm:gap-10 h-auto w-full">
@@ -414,7 +417,7 @@
                                     id="first-name" aria-labelledby="first-name" required />
 
                                 <p class=" gap-0 ex-para text-[1rem] invalidPara hidden">
-                                    <img src="/Assets/Images/ex-mark.png" alt="" class="">
+                                    <img src="/assets/images/ex-mark.png" alt="" class="">
                                     Please Provide a valid Input
                                 </p>
 
@@ -426,12 +429,12 @@
                                     id="email-address" id="email-address" aria-labelledby="email-address" required />
 
                                 <p class=" gap-0 ex-para text-[1rem] invalidPara hidden">
-                                    <img src="/Assets/Images/ex-mark.png" alt="" class="">
+                                    <img src="/assets/images/ex-mark.png" alt="" class="">
                                     Please Provide a valid Input
                                 </p>
                             </label>
 
-                            <label id="select-topic-label" for="select-topic" class="flex flex-col w-full">
+                            <label id="select-topic-label" for="select-topic" class="flex flex-col w-full relative">
                                 <span class="lableText">Task Type </span>
                                 <select
                                     class="myInput h-[3.375rem]  relative custom-select w-full px-5 py-[0.6rem] rounded-md text-[#cbd5e1] bg-[#1e293b]"
@@ -441,10 +444,10 @@
                                     <option value="topic2" class="">Development</option>
                                     <option value="topic3" class="">Marketing</option>
                                 </select>
-                                <img src="/Assets/Images/down-arrow.png" alt="" class="custom-arrow">
+                                <img src="/assets/images/down-arrow.png" alt="" class="custom-arrow">
 
                                 <p id="select-topic-description" class=" gap-0 ex-para text-[1rem] invalidPara hidden">
-                                    <img src="/Assets/Images/ex-mark.png" alt="" class="">
+                                    <img src="/assets/images/ex-mark.png" alt="" class="">
                                     Please select a topic from the dropdown.
                                 </p>
                             </label>
@@ -468,10 +471,7 @@
 
                 </div>
 
-                <div class="imgDiv h-full xl:col-span-7 col-span-12">
-                    <img src="/Assets/Images/contact-us-banner.png" alt=" "
-                        class="w-full h-full object-cover xl:min-h-[75rem]">
-                </div>
+                
 
             </section>
 
