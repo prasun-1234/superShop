@@ -74,6 +74,14 @@ svg path {
   opacity: 1;
 }
 
+.header-text-link {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
 .listButton p {
   text-align: center;
   font-family: Inter;
@@ -81,6 +89,16 @@ svg path {
   font-weight: 600;
   line-height: 150%;
   color: var(--heading-color);
+}
+.quote-btn p {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.quote-btn {
+  border: 2px solid #ea580c;
 }
 
 .url-text p {
@@ -92,175 +110,47 @@ svg path {
   line-height: 180%;
 }
 
-/* --------------- SECTION START HERE -------------- */
+/* SECTION STARTS HERE */
 
-.left-header {
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
-  color: var(--heading-color);
-}
-.custom-text {
-  background: linear-gradient(90deg, #6dffc1 32.63%, #bd9eff 49.41%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Manrope;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
-}
-.left-para {
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-  color: var(--paragraph-color);
-}
-
-.right-header {
+.upper-list .upper-list-head {
   font-family: Helvetica;
-  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  color: var(--heading-color);
 }
-.lableText {
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-  color: var(--heading-color);
-}
-
-label input::placeholder {
-  color: #cbd5e1;
-}
-label input {
-  color: var(--paragraph-color);
-}
-
-label textarea {
-  color: var(--paragraph-color);
-  outline: none;
-}
-
-.myInput {
-  background-color: #1e293b;
-  outline: none;
-  /* border: 1px solid ; */
-}
-.myInput:focus {
-  border: 2px solid #464EFF;
-}
-
-.custom-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 30px; 
-  width: 100%;
-  height: 3rem; 
-  cursor: pointer;
-}
-.custom-select::after{
-  content: url('/assets/images/down-arrow.png');
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  height: 20px;
-  width: 20px;
-  pointer-events: none;
-}
-.custom-arrow {
-  position: absolute;
-  top: 65%;
-  right: 1.25rem; 
-  transform: translateY(-50%);
-  pointer-events: none;
-  opacity: 0.5;
-  transition: opacity 0.3s ease; 
-}
-#select-topic-label:active .custom-arrow {
-  opacity: 1;
-}
-
-#phone-number {
-  -moz-appearance: textfield; /* Firefox */
-}
-
-#phone-number::-webkit-inner-spin-button,
-#phone-number::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-#phone-number {
-  appearance: none;
-}
-
-.button-text {
+.upper-list .billing-items .billing-items-header p {
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
 }
 
-.hrLine {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) -59%,
-    rgba(2, 6, 23, 1) 100%
-  );
-  padding: 1px;
-}
-
-.ex-para {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-  color: #ef4444;
-  text-align: center;
-}
-.invalidPara {
-  display: none;
-}
-
-@media screen and (min-width:1920px)  {
-  .contact-container{
+@media screen and (min-width: 1920px) {
+  .contact-container {
     max-width: 1920px;
     margin: auto;
   }
-  .head{
+  .head {
     max-width: 100%;
   }
-  .header-div{
+  .header-div {
     max-width: 1920px;
     left: auto;
     margin: auto;
   }
 }
 
-
-@media only screen and (min-width: 1800px)  {
+@media only screen and (min-width: 1800px) {
   .right-header {
     font-size: 3rem;
   }
-  .contact-container{
+  .contact-container {
     gap: 8rem;
   }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1799px) {
- 
-  .contact-container{
+  .contact-container {
     gap: 3rem;
   }
 }
@@ -310,7 +200,7 @@ label textarea {
     max-width: 4rem;
   }
 
-    /* SECTION START HERE */
+  /* SECTION START HERE */
 
   .right-header {
     margin-top: 2rem;
@@ -324,7 +214,6 @@ label textarea {
   .formGroup {
     gap: 1.25rem;
   }
-  
 }
 
 @media screen and (min-width: 375px) and (max-width: 479px) {
@@ -369,7 +258,7 @@ label textarea {
     max-width: 3rem;
   }
 
-    /* SECTION START HERE */
+  /* SECTION START HERE */
 
   .right-header {
     margin-top: 2rem;
@@ -446,5 +335,4 @@ label textarea {
   .formGroup {
     gap: 1.25rem;
   }
-  
 }

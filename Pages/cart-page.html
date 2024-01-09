@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Journal Page</title>
-    <link rel="stylesheet" href="/assets/css/journal.css" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="/assets/css/cart-page-style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -13,13 +13,11 @@
     <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto gap-0">
         <aside class="bg-slate-800 lg:max-w-[7rem] lg:relative fixed bottom-0 left-0 w-full z-[100]">
             <nav
-                class="sideNav w-full h-auto lg:h-[100dvh] duration-150 ease-in-out sticky top-0 left-0 z-[899]   lg:pr-[1px] lg:pt-0 pt-[1px]">
-
+                class="sideNav w-full h-auto lg:h-[100dvh] duration-150 ease-in-out sticky top-0 left-0 z-[899] lg:pr-[1px] lg:pt-0 pt-[1px]">
                 <ul
-                    class="nav-list  w-full h-full flex md:flex-row lg:flex-col  xl:gap-[2.75rem] lg:gap-14 md:gap-20 sm:gap-14 2xl:justify-center lg:justify-center md:justify-center sm:justify-center 2xl:items-center !py-[10px] lg:!py-0">
-
+                    class="nav-list w-full h-full flex md:flex-row lg:flex-col xl:gap-[2.75rem] lg:gap-14 md:gap-20 sm:gap-14 2xl:justify-center lg:justify-center md:justify-evenly sm:justify-center 2xl:items-center !py-[10px] lg:!py-0">
                     <li class=" ">
-                        <a href="#" class="nav-icon  ">
+                        <a href="#" class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -48,22 +46,12 @@
                             <p class="text-center hidden lg:block xl:block">Home</p>
                         </a>
                     </li>
-                    <li class="relative ">
-                        <span class="notification 
-                                absolute text-[14px] z-10
-                                2xl:top-[-9px] lg:top-[-9px] md:top-[-25px] sm:top-[-25px]
-                                2xl:right-0 lg:right-0 md:right-0 sm:right-0
-                                flex 
-                                justify-center 
-                                items-center 
-                                2xl:px-[0.62rem] lg:px-[0.62rem] md:px-[0.47rem] sm:px-[0.47rem]
-                                2xl:py-[0.12rem]  lg:py-[0.12rem] md:py-[0.12rem] sm:py-[0.12rem]
-                                bg-[#CBD5E1] 
-                                rounded-[0.25rem]">
+                    <li class="relative">
+                        <span
+                            class="notification absolute text-[14px] z-10 2xl:top-[-9px] lg:top-[-9px] md:top-[-25px] sm:top-[-25px] 2xl:right-0 lg:right-0 md:right-0 sm:right-0 flex justify-center items-center 2xl:px-[0.62rem] lg:px-[0.62rem] md:px-[0.47rem] sm:px-[0.47rem] 2xl:py-[0.12rem] lg:py-[0.12rem] md:py-[0.12rem] sm:py-[0.12rem] bg-[#CBD5E1] rounded-[0.25rem]">
                             New
                         </span>
-                        <a href="#" class="nav-icon  ">
-
+                        <a href="#" class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <path d="M9.05554 33.6111H10.8889V20.7778H9.05554V33.6111Z" fill="white" />
@@ -77,11 +65,11 @@
                                 <path d="M36.5555 9.77779H34.7222V26.2778H36.5555V9.77779Z" fill="white" />
                                 <path d="M18.2222 7.94446V9.77779H34.7222V7.94446H18.2222Z" fill="white" />
                             </svg>
-                            <p class="text-center hidden lg:block xl:block ">Shopify Task</p>
+                            <p class="text-center hidden lg:block xl:block">Shopify Task</p>
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon  ">
+                        <a href="#" class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -108,11 +96,13 @@
                                     <path d="M31.6667 33V31.1666H28V33H31.6667Z" fill="white" />
                                 </g>
                             </svg>
-                            <p class="text-center hidden lg:block xl:block">Hire your own Team</p>
+                            <p class="text-center hidden lg:block xl:block">
+                                Hire your own Team
+                            </p>
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon  ">
+                        <a href="#" class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -141,7 +131,7 @@
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon  ">
+                        <a href="#" class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -166,11 +156,11 @@
                                     <path d="M17.0005 32.9998V34.8332L33.5005 34.8332V32.9998H17.0005Z" fill="white" />
                                 </g>
                             </svg>
-                            <p class="hidden lg:block xl:block ">journal</p>
+                            <p class="hidden lg:block xl:block">journal</p>
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="nav-icon  ">
+                        <a href="#" class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" class="head-ul-logo"
                                 viewBox="0 0 45 44" fill="none">
                                 <g opacity="1">
@@ -207,12 +197,13 @@
             </nav>
         </aside>
 
-        <main class="w-full h-auto">
-            <header class="head flex flex-col lg:py-9 sm:py-[1.62rem] sm:px-6 xl:px-[3.75rem]  md:py-7 xl:gap-10 md:gap-6 sm:gap-5">
-                <div class="header-div flex justify-between sm:items-start w-full">
+        <main class="h-auto w-full relative">
+            <header
+                class="head flex flex-col lg:py-9 py-[1.62rem] px-6 xl:px-[3.75rem] lg:px-4 md:px-6 md:py-7 xl:gap-10 md:gap-6 sm:gap-5">
+                <div class="header-div flex justify-between sm:items-center w-full">
                     <a href="#" class="flex justify-center items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="head-logo sm:max-w-[8rem]" width="192"
-                            height="50" viewBox="0 0 192 50" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="head-logo sm:max-w-[8rem] lg:max-w-[11rem]"
+                            width="192" height="50" viewBox="0 0 192 50" fill="none">
                             <path
                                 d="M99.0065 2.02188L80.002 27.2781L90.2429 28.1108L82.4656 50.0001L100.617 23.0594L90.0873 22.3179L99.0065 2.02188Z"
                                 fill="#D7ABAB" />
@@ -291,8 +282,26 @@
                                 fill="#E6E6E6" fill-opacity="0.6" />
                         </svg>
                     </a>
+                    <ul class="header-text xl:gap-10 lg:gap-4 sm:gap-5 justify-center items-center hidden lg:flex">
+                        <li>
+                            <a href="#"
+                                class="header-text-link flex justify-center items-center text-[1rem] text-[#fff]">Design
+                                Task
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="header-text-link flex justify-center items-center text-[1rem] text-[#fff]">Development
+                                Task</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="header-text-link flex justify-center items-center text-[1rem] text-[#fff]">Marketing
+                                Task</a>
+                        </li>
+                    </ul>
 
-                    <ul class="header-list flex items-center lg:gap-8 sm:gap-5 ">
+                    <ul class="header-logo-list flex items-center xl:gap-10 lg:gap-4 sm:gap-5 lg:mr-0 mr-0">
                         <li>
                             <a href="#" class=" ">
                                 <svg width="45" height="44" class="head-ul-logo sm:max-w-[3rem] sm:max-h-[3rem]"
@@ -316,43 +325,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class=" ">
-                                <svg width="45" height="44" class="head-ul-logo sm:max-w-[3rem] sm:max-h-[3rem]"
-                                    viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_929_227)">
-                                        <path
-                                            d="M11.236 24.5999V26.3333V28.0664V29.7999V31.5333V33.2664H13.0218H14.8077V31.5333V29.7999V28.0664H16.5932V29.7999V31.5333V33.2664H18.379H20.1648H21.9503H23.7362H25.522H27.3075V31.5333V29.7999V28.0664V26.3333H29.0933V28.0664V29.7999V31.5333V33.2664H30.8792H32.6647V31.5333V29.7999V28.0664V26.3333V24.5999H34.4505V26.3333V28.0664V29.7999V31.5333V33.2664V34.9999H32.6647H30.8792H29.0933H27.3075H25.522H23.7362H21.9503H20.1648H18.379H16.5932H14.8077H13.0218H11.236H9.4505V33.2664V31.5333V29.7999V28.0664V26.3333V24.5999H11.236Z"
-                                            fill="white" />
-                                        <path d="M11.2369 22.8665H13.0227V24.5999H11.2369V22.8665Z" fill="white" />
-                                        <path
-                                            d="M18.3807 14.2V15.9334V17.6665H16.5949V15.9334V14.2V12.4665V10.7334H18.3807V12.4665V14.2Z"
-                                            fill="white" />
-                                        <path
-                                            d="M21.9502 17.6666H23.736H25.5219V19.4001H23.736H21.9502H20.1647H18.3788V17.6666H20.1647H21.9502Z"
-                                            fill="white" />
-                                        <path d="M23.7344 24.5999V26.3333H21.9486H20.1631V24.5999H21.9486H23.7344Z"
-                                            fill="white" />
-                                        <path
-                                            d="M21.9502 10.7334H20.1647H18.3788V9H20.1647H21.9502H23.736H25.5219V10.7334H23.736H21.9502Z"
-                                            fill="white" />
-                                        <path
-                                            d="M25.5238 15.9334V14.2V12.4665V10.7334H27.3093V12.4665V14.2V15.9334V17.6665H25.5238V15.9334Z"
-                                            fill="white" />
-                                        <path
-                                            d="M27.3082 22.8667H25.5227V24.6001H23.7369V22.8667H21.951H20.1655V24.6001H18.3797V22.8667H16.5939H14.8084H13.0225V21.1335H14.8084H16.5939H18.3797H20.1655H21.951H23.7369H25.5227H27.3082H29.094H30.8799V22.8667H29.094H27.3082Z"
-                                            fill="white" />
-                                        <path d="M30.8775 22.8665H32.663V24.5999H30.8775V22.8665Z" fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_929_227">
-                                            <rect width="25" height="26" fill="white"
-                                                transform="matrix(-1 0 0 1 34.4481 9)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </li>
+
                         <li>
                             <a href="#" class=" ">
                                 <svg width="44" height="44" class="head-ul-logo sm:max-w-[3rem] sm:max-h-[3rem]"
@@ -371,156 +344,101 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="max-w-[14.8rem]">
+                        <li class="lg:hidden block">
+                            <a href="#" class=" ">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="head-ul-logo sm:max-w-[3rem] sm:max-h-[3rem]" width="45" height="44"
+                                    viewBox="0 0 45 44" fill="none">
+                                    <path d="M19.7108 21.3889V19.5556H12.3775L12.3775 21.3889H19.7108Z" fill="white" />
+                                    <path d="M12.3775 12.2222L10.5442 12.2222L10.5442 19.5556H12.3775V12.2222Z"
+                                        fill="white" />
+                                    <path d="M19.7108 12.2222V10.3889L12.3775 10.3889V12.2222L19.7108 12.2222Z"
+                                        fill="white" />
+                                    <path d="M21.5442 12.2222L19.7108 12.2222V19.5556H21.5442V12.2222Z" fill="white" />
+                                    <path d="M25.2108 12.2222L23.3775 12.2222V19.5556H25.2108V12.2222Z" fill="white" />
+                                    <path d="M32.5442 12.2222V10.3889L25.2108 10.3889V12.2222L32.5442 12.2222Z"
+                                        fill="white" />
+                                    <path d="M32.5442 21.3889V19.5556H25.2108V21.3889H32.5442Z" fill="white" />
+                                    <path d="M34.3775 12.2222L32.5442 12.2222V19.5556H34.3775V12.2222Z" fill="white" />
+                                    <path d="M12.3775 25.0556H10.5442L10.5442 32.3889H12.3775V25.0556Z" fill="white" />
+                                    <path d="M19.7108 25.0556V23.2222H12.3775V25.0556H19.7108Z" fill="white" />
+                                    <path d="M19.7108 34.2223V32.3889H12.3775L12.3775 34.2223H19.7108Z" fill="white" />
+                                    <path d="M21.5442 25.0556H19.7108V32.3889H21.5442V25.0556Z" fill="white" />
+                                    <path d="M25.2108 25.0556H23.3775V32.3889H25.2108V25.0556Z" fill="white" />
+                                    <path d="M32.5442 34.2223V32.3889H25.2108V34.2223H32.5442Z" fill="white" />
+                                    <path d="M34.3775 25.0556H32.5442V32.3889H34.3775V25.0556Z" fill="white" />
+                                    <path d="M32.5442 25.0556V23.2222H25.2108V25.0556H32.5442Z" fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="hidden lg:block">
                             <button
-                                class="quote-btn flex justify-center items-center sm:px-0 sm:py-[0.6rem] lg:px-8 xl:px-4 xl:py-2 rounded-[3.3rem] max-w-[14.8rem] listButton bg-[#ea580c]">
-                                <p
-                                    class="quote xl:text-[1rem] md:max-w-[4rem] lg:max-w-[6rem] xl:max-w-[11rem] sm:max-w-[4rem] sm:text-[0.7rem]">
-                                    GET A QUOTE
-                                </p>
+                                class="quote-btn flex justify-center items-center sm:px-[1.8rem] sm:py-[0.5rem] rounded-[3.3rem] listButton">
+                                <p class="quote sm:text-[1rem]">GET A QUOTE</p>
                             </button>
                         </li>
                     </ul>
                 </div>
-                <div class="url-text">
-                    <p>Home / Journal</p>
-                </div>
+                <!-- <div class="url-text ">
+                <p>Home / About us</p>
+            </div> -->
             </header>
 
-            <section class="baner-section mt-1">
-                <div class="banner-main flex flex-col items-start xl:px-[3.75rem] sm:px-[2rem] gap-10">
-                    <div class="banner-header flex flex-col items-start 2xl:gap-2 sm:gap-4">
-                        <h3 class="baner-head xl:max-w-[51rem] sm:max-w-[30rem] xl:text-[3rem] sm:text-[2rem]">
-                            Shopify Dev and design journal
+            <section class="billing-section mt-10 h-auto w-full relative border">
+                <div
+                    class="main-billing flex flex-col sm:gap-10 xl:px-[3.75rem] lg:px-4 md:px-6 lg:py-9 py-[1.62rem] md:py-7">
+                    <div class="upper-list flex flex-col sm:gap-[1.25rem] items-start">
+                        <h3 class="upper-list-head md:text-[3rem] text-[#fff]">
+                            Your cart
                         </h3>
-                        <p class="text-[1rem] text-[#fff] sm:text-start sm:max-w-[18rem]">
-                            All Shopify and development related Journal here
-                        </p>
-                    </div>
-                    <div class="banner w-full h-auto flex  xl:flex-row flex-col md:flex-col sm:flex-col items-center sm:p-[1.5rem] md:p-[2rem] 2xl:ps-[3.12rem] 2xl:py-[3.12rem] 2xl:pr-[8.3rem] xl:pr-[5.3rem] 2xl:gap-[3.8rem] lg:gap-[3.8rem] md:gap-[3.8rem] sm:gap-[2rem]">
-                        <div class="imgBox 2xl:w-auto w-full h-auto">
-                            <img src="/assets/images/journal-b-img.png" alt="" class="2xl:w-auto w-full" />
+                        <div class="billing-items flex flex-col items-start w-full">
+                            <table class="billing-items-header flex flex-col justify-around items-start w-full">
+                                <tbody class="w-full flex flex-col">
+                                    <tr class="w-full flex justify-between">
+                                        <th>
+                                            <p class="text-[1rem] text-[#fff]">Tasks</p>
+                                        </th>
+                                        <th>
+                                            <p class="text-[1rem] text-[#fff]">Price</p>
+                                        </th>
+                                        <th>
+                                            <p class="text-[1rem] text-[#fff]">Catagory</p>
+                                        </th>
+                                        <th>
+                                            <p class="text-[1rem] text-[#fff]">Total</p>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                    <tr class="text-[#fff] flex justify-between">
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="text-[#fff] flex justify-between">
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="text-[#fff] flex justify-between">
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                                
+                                <!-- <thead class="w-full">
+                                    
+                                </thead> -->
+                                <!--  -->
+                            </table>
+                            
+
+                            <div class="flex justify-between"></div>
+                            <div class="flex justify-between"></div>
                         </div>
-                        <div class="flex flex-col 2xl:w-auto w-full h-auto">
-                            <p class="baner-date text-[1rem] text-[#fff] 2xl:mb-6">
-                                12 Dec, 2023
-                            </p>
-                            <h4
-                                class="baner-right-head 2xl:max-w-[44.7rem] xl:max-w-[44.7rem] lg:max-w-[44.7rem] md:max-w-[44.7rem] sm:max-w-[31rem] text-[#fff] 2xl:text-[2.25rem] sm:text-[2rem] sm:mb-10">
-                                Enim blandit volutpat maecenas volutpat blandit aliquam etiam
-                                erat velit. Mi in nulla posuere ...
-                            </h4>
-                            <button href="#"
-                                class="btn-box flex items-center justify-center px-[1.88rem] py-[0.75rem] rounded-[3.3rem] bg-[#EA580C] 2xl:max-w-[14.8rem] xl:max-w-[14.8rem] lg:max-w-[14.8rem] md:max-w-[14.8rem] sm:max-w-[12.8rem]">
-                                <p class="btn-text text-[1rem] text-[#fff]">VIEW JOURNAL</p>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <span class="hrLine w-full flex my-[5rem]"></span>
-
-            <section class="grid-section mb-20">
-                <div class="grid-main flex flex-col gap-[2.5rem] xl:px-[3.75rem] sm:px-[2rem]">
-                    <h5 class="text-[1.5rem] text-[#fff] gridHead">
-                        Viewing all journals
-                    </h5>
-                    <div class="gridBox grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-2 2xl:gap-x-[5.6rem] xl:gap-x-[4.6rem] lg:gap-x-[2rem] md:gap-x-[2rem] sm:gap-x-[2rem] 2xl:gap-y-[5rem] xl:gap-y-[4.5rem] lg:gap-y-[2rem] sm:gap-y-[2rem] grid-flow-row-dense">
-                        <a href="/pages/journal-single.html" class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="/assets/images/journal-1.png" alt="" class="" />
-                            <span class="flex flex-col cardBtmText">
-                                <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
-                                    Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
-                                    Euismod nisi porta lorem mollis aliquam ut...
-                                </h5>
-                                <p class="2xl:text-[1rem] lg:text-[0.87rem] text-[#fff] cardPara">
-                                    14 Dec, 2023
-                                </p>
-                            </span>
-                        </a>
-                        <a href="/pages/journal-single.html" class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="/assets/images/journal-2.png" alt="" class="" />
-                            <span class="flex flex-col cardBtmText">
-                                <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
-                                    Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
-                                    Euismod nisi porta lorem mollis aliquam ut...
-                                </h5>
-                                <p class="2xl:text-[1rem] lg:text-[0.87rem] text-[#fff] cardPara">
-                                    14 Dec, 2023
-                                </p>
-                            </span>
-                        </a>
-                        <a href="/pages/journal-single.html" class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="/assets/images/journal-3.png" alt="" class="" />
-                            <span class="flex flex-col cardBtmText">
-                                <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
-                                    Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
-                                    Euismod nisi porta lorem mollis aliquam ut...
-                                </h5>
-                                <p class="2xl:text-[1rem] lg:text-[0.87rem] text-[#fff] cardPara">
-                                    14 Dec, 2023
-                                </p>
-                            </span>
-                        </a>
-                        <a href="/pages/journal-single.html" class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="/assets/images/journal-4.png" alt="" class="" />
-                            <span class="flex flex-col cardBtmText">
-                                <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
-                                    Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
-                                    Euismod nisi porta lorem mollis aliquam ut...
-                                </h5>
-                                <p class="2xl:text-[1rem] lg:text-[0.87rem] text-[#fff] cardPara">
-                                    14 Dec, 2023
-                                </p>
-                            </span>
-                        </a>
-                        <a href="/pages/journal-single.html" class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="/assets/images/journal-5.png" alt="" class="" />
-                            <span class="flex flex-col cardBtmText">
-                                <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
-                                    Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
-                                    Euismod nisi porta lorem mollis aliquam ut...
-                                </h5>
-                                <p class="2xl:text-[1rem] lg:text-[0.87rem] text-[#fff] cardPara">
-                                    14 Dec, 2023
-                                </p>
-                            </span>
-                        </a>
-                        <a href="/pages/journal-single.html" class="gridCards flex flex-col items-start gap-6 cursor-pointer">
-                            <img src="/assets/images/journal-6.png" alt="" class="" />
-                            <span class="flex flex-col cardBtmText">
-                                <h5 class="max-w-[31rem] 2xl:text-[1.5rem] lg:text-[1.5rem] text-[#fff] cardHead">
-                                    Vestibulum mattis ullamcorper velit sed ullamcorper Dictum
-                                    Euismod nisi porta lorem mollis aliquam ut...
-                                </h5>
-                                <p class="2xl:text-[1rem] lg:text-[0.87rem] text-[#fff] cardPara">
-                                    14 Dec, 2023
-                                </p>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="pagination flex items-center justify-center 2xl:gap-[2.3rem] xl:gap-[2.3rem] lg:gap-[1rem] md:gap-[1rem] sm:gap-[2rem]">
-                        <a href="#" class="arrowClass">
-                            <img src="/Assets/Images/left-arrow.png" alt="" class="" />
-                        </a>
-                        <a href="#" class="arrowClass active border-none">1</a>
-                        <a href="#" class="arrowClass border-none">2</a>
-                        <a href="#" class="arrowClass border-none">3</a>
-                        <a href="#" class="arrowClass border-none">4</a>
-                        <a href="#" class="arrowClass">
-                            <img src="/Assets/Images/right-arrow.png" alt="" class="" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="border-baner mb-96">
-                <div class="container mx-auto flex justify-center items-center border">
-                    <div class="border-div   px-[5rem] py-[5rem] border">
-                        <!-- <img src="Assets/Images/frame-border.png" alt="" class=""> -->
-                        <h2 class="max-w-[55rem] text-[4.5rem]  text-[#fff]">New era of design & development starts now
-                        </h2>
                     </div>
                 </div>
             </section>
