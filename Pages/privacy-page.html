@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart Page</title>
-    <link rel="stylesheet" href="/assets/css/cart-page-style.css" />
+    <title>Privacy Page</title>
+    <link rel="stylesheet" href="/assets/css/privacy-page-style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper relative flex flex-col lg:flex-row w-full h-auto gap-0">
         <aside class="bg-slate-800 lg:max-w-[7rem] lg:relative fixed bottom-0 left-0 w-full z-[100]">
             <nav
@@ -197,7 +196,7 @@
             </nav>
         </aside>
 
-        <main class="h-auto w-full relative">
+        <main class="h-auto w-full ">
             <header class="head flex flex-col lg:py-9 py-[1.62rem] px-5 xl:px-[3.75rem] lg:px-8 md:px-6 md:py-7 xl:gap-10 md:gap-6 sm:gap-5">
                 <div class="header-div flex justify-between sm:items-center w-full">
                     <a href="#" class="flex justify-center items-center">
@@ -383,175 +382,45 @@
             </div> -->
             </header>
 
-            <section class="billing-section  mt-1  h-auto w-full relative ">
-                <div class="main-billing flex flex-col sm:gap-10 xl:px-[3.75rem] lg:px-8 md:px-6 px-5 lg:py-9 py-[1.62rem] md:py-7">
-                    <div class="upper-list flex flex-col sm:gap-[1.25rem] items-start">
-                        <h3 class="upper-list-head md:text-[3rem] text-[#fff]">
-                            Your cart
-                        </h3>
-                        <div class="billing-items grid grid-rows-3 grid-flow-col w-full">
-
-                            <div class="grid grid-cols-4 w-full xl:mb-[2.3rem] lg:pb-[2.3rem] sm:mb-[1.3rem] sm:pb-[1.3rem] billing-items-header sm:h-[4rem] xl:h-auto ">
-                                <p class="text-[1rem] text-[#fff]">Tasks</p>
-                                <p class="text-[1rem] text-[#fff]">Price</p>
-                                <p class="text-[1rem] text-[#fff]">Catagory</p>
-                                <p class="text-[1rem] text-[#fff]">Total</p>
-                            </div>
-                            <div class="grid grid-cols-4 w-full xl:mb-[2.3rem] lg:pb-[2.3rem] sm:mb-[1.3rem] sm:pb-[1.3rem] billing-items-header ">
-                                <a href="#" class="billing-header-link text-[1rem] text-[#fff] sm:max-w-[8rem] xl:max-w-max">
-                                    Shopify Five Task Bundle
-                                </a>
-                                <span class="price-offer flex flex-col items-start">
-                                    <p class="price-dev-total text-[1rem] text-[#fff] leading-[180%]">$129.00</p>
-                                    <p class="offer text-[0.875rem] text-[#CBD5E1] sm:max-w-[6rem] lg:max-w-max leading-normal">Black Friday 10% OFF
-                                    </p>
-                                </span>
-                                <p class="price-dev-total text-[1rem] text-[#fff]">Development</p>
-                                <span class="text-[1rem] text-[#fff] flex justify-between">
-                                    <p class="price-dev-total ">$119.00</p>
-                                    <button class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                            viewBox="0 0 32 32" fill="none">
-                                            <path d="M22.2188 23.5554H20.8854V24.8888H22.2188V23.5554Z" fill="white" />
-                                            <path d="M11.5521 23.5554H10.2188L10.2188 24.8888H11.5521V23.5554Z"
-                                                fill="white" />
-                                            <path d="M22.2188 23.5554H23.5521V11.5554H22.2188V23.5554Z" fill="white" />
-                                            <path
-                                                d="M23.5521 8.88877V7.55544L18.2188 7.55544V6.22211L14.2188 6.22211V7.55544H8.88544L8.88544 8.88877H23.5521Z"
-                                                fill="white" />
-                                            <path d="M22.2188 11.5554V10.2221H10.2188L10.2188 11.5554H22.2188Z"
-                                                fill="white" />
-                                            <path d="M8.88544 23.5554H10.2188L10.2188 11.5554H8.88544V23.5554Z"
-                                                fill="white" />
-                                            <path d="M20.8854 26.2221V24.8888H11.5521L11.5521 26.2221H20.8854Z"
-                                                fill="white" />
-                                            <path d="M21.1429 12.8573H19.2857V14.7144H21.1429V12.8573Z" fill="white" />
-                                            <path d="M21.1429 20.2858H19.2857V22.143H21.1429V20.2858Z" fill="white" />
-                                            <path d="M19.2857 14.7144H17.4286V16.5716H19.2857V14.7144Z" fill="white" />
-                                            <path d="M19.2857 18.4287H17.4286V20.2858H19.2857V18.4287Z" fill="white" />
-                                            <path d="M13.7143 12.8573H11.8571V14.7144H13.7143V12.8573Z" fill="white" />
-                                            <path d="M13.7143 20.2858H11.8571V22.143H13.7143V20.2858Z" fill="white" />
-                                            <path d="M11.8571 11.0001H10V12.8573H11.8571V11.0001Z" fill="white" />
-                                            <path d="M23 11.0001H21.1429V12.8573H23V11.0001Z" fill="white" />
-                                            <path d="M15.5714 18.4287H13.7143V20.2858H15.5714V18.4287Z" fill="white" />
-                                            <path d="M15.5714 14.7144H13.7143V16.5716H15.5714V14.7144Z" fill="white" />
-                                            <path d="M17.4286 16.5716H15.5714V18.4287H17.4286V16.5716Z" fill="white" />
-                                            <path d="M11.8571 22.143H10V24.0001H11.8571V22.143Z" fill="white" />
-                                            <path d="M23 22.143H21.1429V24.0001H23V22.143Z" fill="white" />
-                                        </svg>
-                                    </button>
-                                </span>
-                            </div>
-                            <div class="grid grid-cols-4 w-full xl:mb-[2.3rem] lg:pb-[2.3rem] sm:mb-[1.3rem] sm:pb-[1.3rem] billing-items-header ">
-                                <a href="#" class="billing-header-link text-[1rem] text-[#fff] sm:max-w-[8rem] xl:max-w-max">
-                                    Social media post design
-                                </a>
-                                <span class="price-offer flex flex-col items-start">
-                                    <p class="price-dev-total text-[1rem] text-[#fff] leading-[180%]">$59.00</p>
-                                    <p class="offer text-[0.875rem] text-[#CBD5E1] sm:max-w-[6rem] lg:max-w-max leading-normal">Black Friday 10% OFF
-                                    </p>
-                                </span>
-                                <p class="price-dev-total text-[1rem] text-[#fff]">Design</p>
-                                <span class="text-[1rem] text-[#fff] flex justify-between">
-                                    <p class="price-dev-total ">$49.00</p>
-                                    <button class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                            viewBox="0 0 32 32" fill="none">
-                                            <path d="M22.2188 23.5554H20.8854V24.8888H22.2188V23.5554Z" fill="white" />
-                                            <path d="M11.5521 23.5554H10.2188L10.2188 24.8888H11.5521V23.5554Z"
-                                                fill="white" />
-                                            <path d="M22.2188 23.5554H23.5521V11.5554H22.2188V23.5554Z" fill="white" />
-                                            <path
-                                                d="M23.5521 8.88877V7.55544L18.2188 7.55544V6.22211L14.2188 6.22211V7.55544H8.88544L8.88544 8.88877H23.5521Z"
-                                                fill="white" />
-                                            <path d="M22.2188 11.5554V10.2221H10.2188L10.2188 11.5554H22.2188Z"
-                                                fill="white" />
-                                            <path d="M8.88544 23.5554H10.2188L10.2188 11.5554H8.88544V23.5554Z"
-                                                fill="white" />
-                                            <path d="M20.8854 26.2221V24.8888H11.5521L11.5521 26.2221H20.8854Z"
-                                                fill="white" />
-                                            <path d="M21.1429 12.8573H19.2857V14.7144H21.1429V12.8573Z" fill="white" />
-                                            <path d="M21.1429 20.2858H19.2857V22.143H21.1429V20.2858Z" fill="white" />
-                                            <path d="M19.2857 14.7144H17.4286V16.5716H19.2857V14.7144Z" fill="white" />
-                                            <path d="M19.2857 18.4287H17.4286V20.2858H19.2857V18.4287Z" fill="white" />
-                                            <path d="M13.7143 12.8573H11.8571V14.7144H13.7143V12.8573Z" fill="white" />
-                                            <path d="M13.7143 20.2858H11.8571V22.143H13.7143V20.2858Z" fill="white" />
-                                            <path d="M11.8571 11.0001H10V12.8573H11.8571V11.0001Z" fill="white" />
-                                            <path d="M23 11.0001H21.1429V12.8573H23V11.0001Z" fill="white" />
-                                            <path d="M15.5714 18.4287H13.7143V20.2858H15.5714V18.4287Z" fill="white" />
-                                            <path d="M15.5714 14.7144H13.7143V16.5716H15.5714V14.7144Z" fill="white" />
-                                            <path d="M17.4286 16.5716H15.5714V18.4287H17.4286V16.5716Z" fill="white" />
-                                            <path d="M11.8571 22.143H10V24.0001H11.8571V22.143Z" fill="white" />
-                                            <path d="M23 22.143H21.1429V24.0001H23V22.143Z" fill="white" />
-                                        </svg>
-                                    </button>
-                                </span>
-                            </div>
-
-                        </div>
+            <section class="paragraph-section h-auto w-full relative mt-1 ">
+                <div class="main-paragraph flex flex-col sm:gap-6 gap-5  px-5 xl:px-[3.75rem] lg:px-8 md:px-6 relative z-20">
+                    <span 
+                    class="absolute 
+                    xl:right-[12.5rem] sm:right-[10rem] right-[8rem]
+                    xl:top-[-7.4rem] sm:top-[-3.4rem] top-[4rem]
+                    xl:w-[19.7rem]  sm:w-[19.7rem]  w-[13rem]
+                    xl:h-[39rem] sm:h-[33rem]  h-[25rem]
+                    rotate-[57.72deg]
+                    bg-[#143092] blur-[80px] rounded-[38.9rem] opacity-[0.74] -z-10
+                    ">
+                    </span>
+                    <h3 class="paragraph-header text-[#fff] sm:text-[3rem] text-[2rem] xl:max-w-[21rem]">Privacy Policy</h3>
+                    <div class="mid-para flex flex-col sm:gap-4 gap-5">
+                        <p class="mid-para-top sm:text-[1rem] text-[0.875rem] text-[#CBD5E1] xl:max-w-[88rem] xl:py-4">
+                            Malesuada fames ac turpis egestas sed tempus urna et pharetra. 
+                            Vitae semper quis lectus nulla at volutpat diam ut. Non consectetur a erat nam at lectus urna. 
+                            Vestibulum mattis ullamcorper velit sed ullamcorper morbi. 
+                            Porta non pulvinar neque laoreet suspendisse interdum. Id neque aliquam vestibulum morbi. 
+                            Quam adipiscing vitae proin sagittis nisl rhoncus. Dui id ornare arcu odio. 
+                            Sit amet venenatis urna cursus eget. Eget duis at tellus at. 
+                            A diam maecenas sed enim ut sem viverra aliquet. Dignissim suspendisse in est ante in nibh. 
+                            Quis varius quam quisque id diam vel quam elementum pulvinar. Penatibus et magnis dis parturient montes. 
+                            Eget nunc lobortis mattis aliquam faucibus purus in.
+                        </p>
+                        <p class="mid-para-top sm:text-[1rem] text-[0.875rem] text-[#CBD5E1] xl:max-w-[86rem] ">
+                            Pharetra convallis posuere morbi leo urna molestie. Viverra suspendisse potenti nullam ac tortor vitae. 
+                            Morbi tincidunt augue interdum velit euismod in pellentesque massa. 
+                            Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Eget gravida cum sociis natoque penatibus. 
+                            Suscipit tellus mauris a diam maecenas sed enim. In ante metus dictum at tempor commodo. 
+                            Condimentum mattis pellentesque id nibh. Quam elementum pulvinar etiam non quam. 
+                            Vitae purus faucibus ornare suspendisse sed.
+                        </p>
                     </div>
-                    <div class="middle-lists flex justify-end ">
-                        <div class="total-price-box flex flex-col gap-10 ">
-                            <div class="price-head flex justify-between gap-[6.2rem]">
-                                <p class="total-cart-price text-[1rem] text-[#fff]">
-                                    Total cart price
-                                </p>
-                                <p class="total-cart-price text-[1rem] text-[#fff]">
-                                    $168.00
-                                </p>
-                            </div>
-                            <div class="discount-head flex justify-between gap-[3.31rem]">
-                                <p class="text-[#fff] text-[1rem] discount-text "> Cart Discount</p>
-                                <div class="cart-discount-box flex flex-col gap-6 ">
-                                    <div class="flex flex-col text-end">
-                                        <p class="cart-discount-price text-[1rem] text-[#fff]">$119.00</p>
-                                        <p class="cart-offer text-[0.875rem] text-[#CBD5E1] max-w-[6.8rem]">Black Friday
-                                            10% OFF</p>
-                                    </div>
-                                    <div class="flex flex-col text-end">
-                                        <p class="cart-discount-price text-[1rem] text-[#fff]">$119.00</p>
-                                        <p class="cart-offer text-[0.875rem] text-[#CBD5E1] max-w-[6.8rem]">Black Friday
-                                            10% OFF</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="total-discount flex justify-between">
-                                <p class="total-discount-price text-[1rem] text-[#fff]">
-                                    Total discount
-                                </p>
-                                <p class="total-discount-price text-[1rem] text-[#fff]">
-                                    $20.00
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="w-full bottom-gradient"></span>
-
-                    <div class="lower-lists flex sm:flex-row flex-col justify-between mb-10 ">
-                        <div class="add-note-box flex flex-col gap-[0.5rem] w-auto">
-                            <label for="add-note-text" >
-                                <p class="text-[1rem] text-[#fff]">Add notes to your order</p>
-                            </label>
-                            <textarea id="add-note-text" name="add-note-text" cols="50"  rows="10"
-                                class="xl:max-w-[27rem] sm:max-w-[17rem] max-w-[100%] h-[9.375rem] px-[1.25rem] pt-[0.69rem] pb-[6.62rem] bg-[#1E293B] rounded-[0.37rem]  focus:outline-none"
-                                placeholder=""></textarea>
-                        </div>
-                        <div class="sub-total-box flex flex-col gap-6 ">
-                            <div class="sub-total flex flex-col text-end gap-4">
-                                <h5 class="text-[1.5rem] text-[#fff]">Subtotal : $168.00</h5>
-                                <p class="text-[1rem] text-[#CBD5E1] max-w-[13.3rem]">Tax Included and shipping calculated at checkout</p>
-                            </div>
-                            <button type="button" class="flex justify-center items-center px-[1.88rem] py-[0.75rem] rounded-[3.3rem] bg-[#EA580C]">
-                                <a href="#" class="text-[#fff] text-[1rem]" >CHECKOUT</a>        
-                            </button>
-                        </div>
-                    </div>
-                    <span class="w-full bottom-gradient"></span>
+                    <p class="copy-right-text text-[1rem] text-[#CBD5E1] ">© 2023, All Rights Reserved</p>
                 </div>
             </section>
-            
+            <span class="border-gradient flex w-full h-[1px] xl:mt-20 mt-10 mb-10 xl:mb-10"></span>
         </main>
     </div>
-</body>
-
+  </body>
 </html>

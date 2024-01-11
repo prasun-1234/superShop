@@ -112,19 +112,27 @@ svg path {
 
 /* SECTION STARTS HERE */
 
-.upper-list .upper-list-head {
+.main-paragraph .paragraph-header {
   font-family: Helvetica;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
 }
-.upper-list .billing-items .billing-items-header p {
+.main-paragraph .mid-para .mid-para-top {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: justify;
+}
+.main-paragraph .copy-right-text {
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
 }
-.billing-items-header {
+
+.border-gradient {
   border-bottom: 1px solid transparent;
   border-image: radial-gradient(
     circle,
@@ -132,113 +140,21 @@ svg path {
     rgba(2, 6, 23, 1) 100%
   );
   border-image-slice: 1;
-  
-}
-.billing-header-link {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%;
-  text-decoration-line: underline;
-}
-.billing-items-header .price-offer .offer {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-}
-.price-dev-total {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-}
-
-.middle-lists .total-price-box .price-head p {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-}
-.discount-head .discount-text {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-}
-.discount-head .cart-discount-box div .cart-discount-price {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-}
-.discount-head .cart-discount-box div .cart-offer {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.total-discount .total-discount-price {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-}
-
-.bottom-gradient {
-  border-bottom: 1px solid transparent;
-  border-image: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 5%,
-    rgba(2, 6, 23, 1) 100%
-  );
-  border-image-slice: 1;
-}
-
-.lower-lists .add-note-box label p {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-}
-.add-note-box textarea {
-  color: #fff;
-}
-.sub-total-box .sub-total h5 {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 160%;
-}
-.sub-total-box .sub-total p {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-}
-.sub-total button a {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
 }
 
 @media screen and (min-width: 1920px) {
-  .head {
+  .head,
+  .paragraph-section {
     max-width: 100%;
   }
   .header-div,
-  .billing-section {
+  .main-paragraph {
     max-width: 1920px;
     left: auto;
     margin: auto;
   }
-  .main-billing{
-    padding-top: 2.5rem;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+  
 }
-
 @media only screen and (min-width: 1800px) {
   .right-header {
     font-size: 3rem;
